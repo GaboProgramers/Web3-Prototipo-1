@@ -1,12 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Web3 CryptoCode</title>
+
+    <!-- estilos css -->
+    <link rel="stylesheet" href="./css/root.css">
+    <link rel="stylesheet" href="./css/navBar.css">
+    <link rel="stylesheet" href="./css/redes.css">
+
+    <!-- librerias y scripts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- ===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
+
 <body>
-    
+    <nav class="navegacion">
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen'></i>
+            <span class="logo navLogo"><a href="#">CryptoCode</a></span>
+
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#">CryptoCode</a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="index2.html">Acerca De</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="darkLight-searchBox">
+                <div class="dark-light">
+                    <i class='bx bx-moon moon'></i>
+                    <i class='bx bx-sun sun'></i>
+                </div>
+
+                <div class="searchBox">
+                    <div class="searchToggle">
+                        <i class='bx bx-x cancel'></i>
+                        <i class='bx bx-search search'></i>
+                    </div>
+
+                    <div class="search-field">
+                        <input type="text" placeholder="Search...">
+                        <i class='bx bx-search'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="redes">
+        <div class="redes__contenedor">
+            <ul class="redes__lista-contenedor">
+                <li class="redes__lista"><a class="redes__enlaces" href="#">Gmail</a><i
+                        class="fas fa-envelope redes__iconos iconos gmail"></i></li>
+
+                <li class="redes__lista"><a class="redes__enlaces" href="#">Whatsapp</a><i
+                        class="fab fa-whatsapp redes__iconos iconos whatsapp"></i></li>
+
+                <li class="redes__lista"><a class="redes__enlaces" href="#">Facebook</a><i
+                        class="fab fa-facebook-f redes__iconos iconos facebook"></i></li>
+
+                <li class="redes__lista"><a class="redes__enlaces" href="#">Instagram</a><i
+                        class="fab fa-instagram redes__iconos iconos instagram"></i></li>
+
+                <li class="redes__lista"><a class="redes__enlaces" href="#">Telegram</a><i
+                        class="fab fa-telegram-plane redes__iconos iconos telegram"></i></li>
+
+                <li class="redes__lista"><a class="redes__enlaces" href="#">Youtube</a><i
+                        class="fab fa-youtube redes__iconos iconos youtube"></i></li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- scripts -->
+    <script src="./js/app.js" defer></script>
 </body>
+
 </html>
