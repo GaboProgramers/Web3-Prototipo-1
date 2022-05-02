@@ -88,6 +88,8 @@
 
     .box .red-social {
         display: grid;
-        grid-template-columns: repeat(1, 2fr);
+        grid-template-columns: repeat(3, 1fr);
+        margin: 10px;
+        grid-row: auto;
     }
 }
