@@ -45,6 +45,8 @@
 .pie-pagina .grupo-1 .box .footer__parrafos{
     color: #efefef;
     margin-bottom: 10px;
+    font-size: 18px;
+    text-transform: capitalize;
 }
 
 .pie-pagina .grupo-1 .red-social .footer__enlaces-redes{
@@ -79,11 +81,13 @@
 }
 
 @media screen and (max-width: 790px){
+
     .pie-pagina .grupo-1{
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
         grid-gap:20px;
         padding: 30px 0px;
+        align-self: center;
     }
 
     .box .red-social {
@@ -95,6 +99,10 @@
     }
 
     .box .red-social .footer__enlaces-redes {
-        margin-bottom: 10px;
+        margin: 30px 0 20px 25px;
+    }
+
+    .pie-pagina .grupo-2 {
+        padding: 15px 5px;
     }
 }
