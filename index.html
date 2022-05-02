@@ -10,7 +10,9 @@
     <!-- estilos css -->
     <link rel="stylesheet" href="./css/root.css">
     <link rel="stylesheet" href="./css/navBar.css">
-    <link rel="stylesheet" href="./css/redes.css">
+    <!-- <link rel="stylesheet" href="./css/redes.css"> -->
+    <link rel="stylesheet" href="./css/cabecera-principal.css">
+    <link rel="stylesheet" href="./css/footer.css">
 
     <!-- librerias y scripts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -62,7 +64,16 @@
         </div>
     </nav>
 
-    <section class="redes">
+    <section>
+        <div class="cabecera-container">
+            <div class="cabecera__titulo">
+                <span class="texto primer-texto">Soy Un</span>
+                <span class="texto segundo-texto"> Youtuber </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="redes">
         <div class="redes__contenedor">
             <ul class="redes__lista-contenedor">
                 <li class="redes__lista"><a class="redes__enlaces" href="#">Gmail</a><i
@@ -84,11 +95,44 @@
                         class="fab fa-youtube redes__iconos iconos youtube"></i></li>
             </ul>
         </div>
+    </section> -->
+
+    <!--::::Pie de Pagina::::::-->
+    <section class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure class="footer__figure">
+                    <a href="index.html">
+                        <img class="footer__img" src="./img/CryptoCode-removebg-preview.png" alt="Logo de CryptoCode">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2 class="footer__titulos">SOBRE NOSOTROS</h2>
+                <p class="footer__parrafos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+                <p class="footer__parrafos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+            </div>
+            <div class="box">
+                <h2 class="footer__titulos">SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#" class="footer__enlaces-redes fab fa-whatsapp"></a>
+                    <a href="#" class="footer__enlaces-redes fab fa-instagram"></a>
+                    <a href="#" class="footer__enlaces-redes fab fa-twitter"></a>
+                    <a href="#" class="footer__enlaces-redes fab fa-youtube"></a>
+                    <a href="#" class="footer__enlaces-redes fas fa-envelope"></a>
+                    <a href="#" class="footer__enlaces-redes fab fa-telegram-plane"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small class="footer__grupo-2">&copy; 2022 <b>CryptoCode</b> - Todos los Derechos Reservados.</small>
+        </div>
     </section>
 
 
     <!-- scripts -->
     <script src="./js/app.js" defer></script>
+    <script src="./js/txt-animacion.js" defer></script>
 </body>
 
 </html>

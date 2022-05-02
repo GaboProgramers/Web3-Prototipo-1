@@ -1,16 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,700&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-}
-
 :root {
     --color-primario-header: #2f3045;
-    --color-secundario-body: #181928;
+    --color-secundario-body: #141521;
     --color-enlaces-inicial: #ffffff;
     --color-background-buscador: #6c757d;
     --color-enlaces-hover: #03e1e4;
@@ -18,3 +10,27 @@
     --color-background-input: #fff;
     
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'roboto', sans-serif;
+}
+
+section {
+    padding: 50px 3%;
+}
+
+body::-webkit-scrollbar {
+    width: 7px;
+    background: var(--color-secundario-body);
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: var(--color-primario-header);
+    border-radius: 10px;
+    border: 1.5px solid #000000;
+  }
