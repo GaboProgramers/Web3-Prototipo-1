@@ -90,6 +90,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-row: auto;
+        align-self: center;
     }
 
     .box .red-social .footer__enlaces-redes {
