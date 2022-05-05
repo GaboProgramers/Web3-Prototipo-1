@@ -39,7 +39,7 @@
     margin-bottom: 25px;
     font-size: 20px;
     letter-spacing: 1px;
-    border-bottom: 3px solid var(--color-enlaces-hover);
+    border-bottom: 1px solid var(--color-enlaces-hover);
 }
 
 .pie-pagina .grupo-1 .box .footer__parrafos{
@@ -74,6 +74,7 @@
     padding: 10px 0px;
     text-align: center;
     color: #fff;
+    border-radius: 7px;
 }
 
 .pie-pagina .grupo-2 .footer__grupo-2{
@@ -100,6 +101,16 @@
 
     .box .red-social .footer__enlaces-redes {
         margin: 30px 0 20px 25px;
+    }
+
+    .pie-pagina .grupo-1 .box .footer__titulos {
+        text-align: center;
+        margin-left: 60px;
+    }
+
+    .pie-pagina .grupo-1 .box .footer__parrafos {
+        text-align: center;
+        margin-bottom: 12px;
     }
 
     .pie-pagina .grupo-2 {

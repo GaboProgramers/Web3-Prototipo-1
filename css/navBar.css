@@ -87,6 +87,10 @@ nav .nav-bar .logo a:hover {
     display: none;
 }
 
+.menu .open-source__movil {
+    display: none;
+}
+
 .nav-bar .nav-links{
     display: flex;
     align-items: center;
@@ -292,6 +296,53 @@ body.dark .search-field i{
         justify-content: space-between;
     }
 
+    .menu .open-source__movil {
+        display: block;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-bottom: 2px solid var(--color-enlaces-hover);
+    }
+
+    .open-source__movil .movil__titulo {
+        width: 100%;
+        font-size: 18px;
+        margin: 20px auto;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        color: var(--color-enlaces-inicial);
+    }
+
+    .open-source__movil .img__cripto {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .open-source__movil .img__cripto .enlaces__crypto img {
+        width: 45px;
+        height: 45px;
+        margin: 10px 10px;
+    }
+
+    .open-source__movil .open__parrafo {
+        text-align: center;
+        text-transform: capitalize;
+        padding: 3px 0 4px 0;
+        margin-bottom: 10px;
+        font-size: 15px;
+        letter-spacing: .5px;
+        font-weight: 700;
+        color: var(--color-enlaces-inicial);
+    }
+
+    .open-source__movil .open__parrafo .span {
+        font-weight: bold;
+        color: var(--color-enlaces-hover);
+    }
+
     .logo-toggle .siderbarClose{
         color: var(--color-enlaces-inicial);
         font-size: 35px;
@@ -305,10 +356,12 @@ body.dark .search-field i{
     .nav-bar .nav-links{
         flex-direction: column;
         padding-top: 30px;
+        padding-bottom: 10px;
+        border-bottom: 3px solid #03e0e445;
     }
 
     .nav-links li a{
         display: block;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 }
