@@ -30,6 +30,7 @@
 
 .pie-pagina .grupo-1 .box .footer__figure .footer__img{
     width: 250px;
+    height: auto;
     border-radius: 10px;
 }
 
