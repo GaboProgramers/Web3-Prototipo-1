@@ -22,14 +22,14 @@
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
-    opacity: .8;
+    opacity: .9;
 }
 
 .acordion .acordion__contenedor {
     margin: 12px 0;
     border-radius: 4px;
     background-color: var(--color-primario-header);
-    border: 1px solid var(--color-background-buscador);
+    border: 1px solid var(--color-enlaces-hover);
     overflow: hidden;
 }
 
@@ -53,14 +53,16 @@
 
 .acordion__contenedor header .titulo__acordion {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
     margin: 0 0 0 20px;
+    text-transform: capitalize;
     color: var(--color-enlaces-inicial);
 }
 
 .acordion__contenedor header .icono__acordion {
     font-size: 15px;
-    color: var(--color-enlaces-inicial);
+    margin-right: 10px;
+    color: var(--color-enlaces-hover);
 }
 
 .acordion__contenedor .descripcion__acordion {
@@ -69,8 +71,16 @@
     color: var(--color-enlaces-inicial);
     font-weight: 200;
     padding: 0 15px;
+    line-height: 1.4;
     transition: all .2s linear;
     text-transform: capitalize;
+}
+
+.acordion__contenedor.open .descripcion__acordion .enlaces__directos-acordion,
+.acordion__contenedor.open .descripcion__acordion .roadmap,
+.acordion__contenedor.open .descripcion__acordion .blockchain {
+    text-transform: uppercase;
+    color: var(--color-enlaces-hover);
 }
 
 @media screen and (max-width: 790px){
