@@ -26,6 +26,7 @@
 
     <!-- icono principal -->
     <link rel="icon" type="image/png" href="./img/icono-CryptoCode.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- estilos css -->
     <link rel="stylesheet" href="./css/root.css">
@@ -124,11 +125,11 @@
 
     <section>
 
-        <div class="titulo__roadmap">
+        <div class="titulo__roadmap" data-aos="fade-right">
             <h1>Roadmap CryptoCode</h1>
         </div>
 
-        <div class="container__roadmap">
+        <div class="container__roadmap" data-aos="fade-right">
             <div class="roadmap__evento">
                 <div class="descripcion__roadmap">
                     <p class="texto-roadmap">
@@ -187,7 +188,7 @@
 
     <section>
 
-        <div class="primera-seccion__contenedor">
+        <div class="primera-seccion__contenedor" data-aos="fade-left">
             <h2 class="contenedor__titulo"> Preguntas Frecuentes..?</h2>
             <div class="acordion">
                 <div class="acordion__contenedor">
@@ -313,9 +314,19 @@
 
 
 
-    <!-- archivo particulas -->
+    <!-- scripts por CDN -->
 
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- script de inicio AOS -->
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
 
     <!-- scripts -->
     <script src="./js/app.js" defer></script>
