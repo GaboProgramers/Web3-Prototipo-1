@@ -87,6 +87,12 @@
 }
 
 @media screen and (max-width: 790px){
+
+    .primera-seccion__contenedor {
+        border-radius: 0;
+        padding: 10px;
+    }
+
     .primera-seccion__contenedor .contenedor__titulo {
         font-size: 1.7rem;
     }
