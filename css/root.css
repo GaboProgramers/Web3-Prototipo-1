@@ -9,6 +9,14 @@
     --color-texto-input: rgb(0, 0, 0);
     --color-background-input: #fff;
     --color: rgba(34, 234, 237, 0.82);
+
+    /* colores para la distribucion */
+
+    --facebook: rgb(16, 90, 164);
+    --twitter: rgba(200, 56, 56, 0.916);
+    --pinterest: rgb(199, 149, 55);
+    --instagram: rgb(206, 33, 131);
+
 }
 
 * {
