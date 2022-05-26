@@ -6,11 +6,11 @@ body {
     width: 100%;
     background-color: var(--color-secundario-body);
 
-    /* min-height: 100vh;
+    min-height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
-    right: 0; */
+    right: 0;
     
     display: flex;
     flex-direction: column;
