@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colección (NFT)</title>
+
+    <!-- link de apis y conecciones importantes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- icono principal -->
+    <link rel="icon" type="image/png" href="./img/icono-CryptoCode.png">
+
+    <!-- estilos css -->
+    <link rel="stylesheet" href="./css/root.css">
+    <link rel="stylesheet" href="./css/captcha.css">
+
+    <!-- librerias y scripts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- ===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div id="particles-js"></div>
+
+    <section>
+        <div class="robot">
+            <header class="titulo-header">Creando Captcha Con JS</header>
+            <div class="robot-area">
+                <div class="robot-img">
+                    <img src="./img/robot-bg.png" alt="robot-captcha">
+                    <span class="clave-robot"></span>
+                </div>
+                <button class="recargar-btn"><i class="fas fa-redo-alt"></i></button>
+            </div>
+            <form action="#" class="input-area">
+                <input type="text" placeholder="Ingrese El Captcha" required>
+                <button class="enviar-btn">Confirmar</button>
+            </form>
+
+            <div class="estatus-texto">El Captcha No Coincide, Por Favor Ingrese De Nuevo</div>
+        </div>
+    </section>
+
+
+    <!-- script particulas -->
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    
+
+    <!-- scripts -->
+
+    <script src="./js/particulas.js" defer></script>
+    <script src="./js/captcha.js" defer></script>
+
+</body>
+
+</html>
