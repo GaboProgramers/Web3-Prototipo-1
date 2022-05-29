@@ -1,0 +1,136 @@
+body {
+    background-color: var(--color-secundario-body);
+}
+
+.titulo-premiun {
+    width: 90%;
+    max-width: 900px;
+    text-align: center;
+    margin: 100px auto;
+    background-color: #2f3045dd;
+    padding: 10px;
+    line-height: 1.6;
+    border-radius: 15px;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.titulo-premiun span {
+    text-transform: uppercase;
+    color: var(--color-enlaces-hover);
+}
+
+.texto-premiun {
+    width: 90%;
+    max-width: 900px;
+    text-align: center;
+    color: var(--color-enlaces-hover);
+    background-color: #2f3045dd;
+    opacity: 1;
+    font-size: 30px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    text-transform: capitalize;
+}
+
+.contenedor-premiun {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    opacity: 0.8;
+}
+
+.tabla {
+    width: 33%;
+    height: 550px;
+    margin: auto;
+    border: 1px solid var(--color-enlaces-hover);
+    border-radius: 10px;
+    box-shadow: 3px 2px 15px -2px rgba(18,224,224,0.82);
+    padding: 60px;
+    text-align: center;
+    flex-grow: 1;
+    color: var(--color-enlaces-hover);
+    transition: all .2s ease;
+}
+
+.tabla h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.tabla img {
+    width: 64px;
+    margin-bottom: 35px;
+    background-color: aqua;
+    border-radius: 20px;
+    padding: 10px;
+    object-fit: cover;
+}
+
+.tabla h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.tabla p {
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.tabla a {
+    display: inline-block;
+    width: 150px;
+    padding: 12px;
+    background-color: var(--color-primario-header);
+    text-decoration: none;
+    color: var(--color-enlaces-hover);
+    border-radius: 100px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin: auto;
+    cursor: pointer;
+}
+
+.tabla:hover {
+    background-color: var(--color-primario-header);
+    transform: scale(1.1);
+    color: var(--color-enlaces-inicial);
+    cursor: pointer;
+}
+
+.tabla:hover a {
+    background-color: var(--color-secundario-body);
+}
+
+@media screen and (max-width: 790px) {
+
+    .texto-premiun {
+        font-size: 20px;
+    }
+
+    .tabla {
+        width: 100%;
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    .tabla:hover {
+        transform: none;
+        color: var(--color-enlaces-inicial);
+    }
+
+    .tabla p {
+        margin-bottom: 80px;
+    }
+}
