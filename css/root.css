@@ -28,6 +28,10 @@
     font-family: 'roboto', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 section {
     padding: 50px 3%;
 }
