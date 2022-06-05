@@ -70,13 +70,37 @@
 }
 
 .pie-pagina .grupo-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #0a1a2a;
     margin: 20px 0 0 0;
-    padding: 10px 0px;
+    padding: 10px 20px;
     text-align: center;
     color: #fff;
     border-radius: 7px;
 }
+
+/* inicio seccion idiomas */
+
+.grupo-2 .flags {
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grupo-2 .flags .flags-item {
+    width: 30px;
+}
+
+.grupo-2 .flags .flags-item .flags-img {
+    display: block;
+    cursor: pointer;
+}
+
+
+/* fin seccion idiomas */
 
 .pie-pagina .grupo-2 .footer__grupo-2{
     font-size: 15px;
@@ -116,5 +140,10 @@
 
     .pie-pagina .grupo-2 {
         padding: 15px 5px;
+        flex-direction: column;
+    }
+
+    .grupo-2 .flags {
+        margin-top: 12px;
     }
 }

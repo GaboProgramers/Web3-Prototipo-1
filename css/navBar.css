@@ -185,6 +185,12 @@ nav .nav-bar .logo a:hover {
         transition: all 0.3s ease;
     }
 
+    .nav-bar .img-idiomas {
+        display: none;
+    }
+
+    
+
     .menu .logo-toggle{
         display: block;
         width: 100%;

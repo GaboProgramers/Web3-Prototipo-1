@@ -71,6 +71,10 @@
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
 
+                <div class="idiomas-img" id="idiomas">
+
+                </div>
+
                 <div class="open-source__movil">
                     <h3 class="movil__titulo">Criptomonedas Aceptadas</h3>
                     <div class="img__cripto">
@@ -103,7 +107,7 @@
                 </div>
 
                 <div class="premiun-seccion">
-                    <a class="enlace-admin" href="./premiun.html"><i class='bx bxs-crown' ></i></a>
+                    <a class="enlace-admin" href="./premiun.html"><i class='bx bxs-crown'></i></a>
                 </div>
             </div>
         </div>
@@ -343,7 +347,8 @@
 
     <section>
 
-        <h1 class="titulo__distribucion" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+        <h1 class="titulo__distribucion" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+            data-section="profile" data-value="rol">
             Implementacion del token y distribucion del mismo..!!</h1>
 
         <div class="contenedor__distribucion" data-aos="flip-left" data-aos-easing="ease-out-cubic"
@@ -353,21 +358,21 @@
             <div class="container-leyenda">
                 <span class="leyenda-all">
                     <span class="color__facebook"></span>
-                    <p class="social">60% Recompensas</p>
+                    <p class="social social1" data-section="categorias" data-value="social1">60% Recompensas</p>
                 </span>
                 <span class="leyenda-all">
                     <span class="color__twitter"></span>
-                    <p class="social">15% Team</p>
+                    <p class="social social2" data-section="categorias" data-value="social2">15% Team</p>
                 </span>
                 <span class="leyenda-all">
                     <span class="color__instagram"></span>
-                    <p class="social">15% Airdrops y Sorteos</p>
+                    <p class="social social3" data-section="categorias" data-value="social3">15% Airdrops y Sorteos</p>
                 </span>
                 <span class="leyenda-all">
                     <span class="color__pinterest"></span>
-                    <p class="social">10% Liquidez</p>
+                    <p class="social social4" data-section="categorias" data-value="social4">10% Liquidez</p>
                 </span>
-                <p class="total">Total: 400.000.000 token`s</p>
+                <p class="total social5" data-section="categorias" data-value="social5">Total: 400.000.000 token`s</p>
             </div>
 
 
@@ -380,7 +385,7 @@
 
     <!-- inicio de seccion desplazable -->
 
-     <section id="slider__contenedor">
+    <section id="slider__contenedor">
 
         <div class="slider-container swiper" data-aos="zoom-in">
             <div class="slider-content">
@@ -577,7 +582,7 @@
     <!-- fin seccion desplazable -->
 
     <!-- inicio seccion preguntas freceuntes -->
-    
+
     <section>
 
         <div class="primera-seccion__contenedor" data-aos="fade-left">
@@ -713,7 +718,7 @@
             <div class="roadmap__evento">
                 <div class="descripcion__roadmap">
                     <p class="texto-roadmap">
-                        inicio del desarrollo NFT del pryecto...
+                        inicio del desarrollo NFT Para el proyecto...
                     </p>
                 </div>
                 <h3 class="fecha--roadmap">Q2 junio 2023</h3>
@@ -750,7 +755,7 @@
                 <h2 class="footer__titulos">SOBRE NOSOTROS</h2>
                 <p class="footer__parrafos">Plataforma Creada Para El Conocimiento y La Educacion basada en BlockChain..
                 </p>
-                <p class="footer__parrafos">Falta Mucho Conocimiento En La Poblacion Mundial Para Lograr La Adopocion
+                <p class="footer__parrafos">Falta Mucho Conocimiento En La Poblacion Mundial Para Lograr La Adopción
                     Criptografica..</p>
             </div>
             <div class="box">
@@ -767,6 +772,14 @@
         </div>
         <div class="grupo-2">
             <small class="footer__grupo-2">&copy; 2022 <b>CryptoCode</b> - Todos los Derechos Reservados.</small>
+            <div id="flags" class="flags">
+                <div class="flags-item" data-language="es">
+                    <img class="flags-img" src="./img/es.svg" alt="español">
+                </div>
+                <div class="flags-item" data-language="en">
+                    <img class="flags-img" src="./img/en.svg" alt="ingles">
+                </div>
+            </div>
         </div>
     </section>
 
@@ -796,6 +809,7 @@
     <script src="./js/preguntas.js" defer></script>
     <script src="./js/selectbox.js" defer></script>
     <script src="./js/sliderContent.js" defer></script>
+    <script src="./js/cambioIdioma.js" defer></script>
 </body>
 
 </html>
