@@ -70,9 +70,6 @@
 }
 
 .pie-pagina .grupo-2{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: #0a1a2a;
     margin: 20px 0 0 0;
     padding: 10px 20px;
@@ -83,7 +80,7 @@
 
 /* inicio seccion idiomas */
 
-.grupo-2 .flags {
+/* .grupo-2 .flags {
     width: 75px;
     display: flex;
     align-items: center;
@@ -97,7 +94,7 @@
 .grupo-2 .flags .flags-item .flags-img {
     display: block;
     cursor: pointer;
-}
+} */
 
 
 /* fin seccion idiomas */
@@ -140,10 +137,10 @@
 
     .pie-pagina .grupo-2 {
         padding: 15px 5px;
-        flex-direction: column;
+        /* flex-direction: column; */
     }
 
-    .grupo-2 .flags {
+    /* .grupo-2 .flags {
         margin-top: 12px;
-    }
+    } */
 }

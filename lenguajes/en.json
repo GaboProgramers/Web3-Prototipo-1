@@ -3,12 +3,28 @@
         "rol": "Implementation of the token and its distribution..!!"
     },
     "categorias": {
-        "social1": "60% rewards",
-        "social2": "15% team",
-        "social3": "15% Airdrops y raffles",
+        "social1": "60% Rewards",
+        "social2": "15% Team",
+        "social3": "15% Airdrops y Raffles",
         "social4": "10% Liquidity",
-        "social5": "Total: 400.000.000 token`s"
-
+        "social5": "Total: 400.000.000 Token`s"
+    },
+    "preguntasF": {
+        "contenedor__titulo": "Frequent Questions..?",
+        "titulo1": "What is Web3 CryptoCode?",
+        "titulo2": "How can I start learning?",
+        "titulo3": "What are cryptocurrencies?",
+        "titulo4": "Why do they have a roadmap?",
+        "titulo5": "What are NFTs?",
+        "titulo6": "What is Blockchain?"
+    },
+    "descripcionesF": {
+        "descripcion1": "Web3 CryptoCode, is a platform designed to learn about new trends cryptographic, the new digital domain and crypto education for your entire adoption..",
+        "descripcion2": "We will have different sections, where you can learn as you move forward.",
+        "descripcion3": "A cryptocurrency, cryptocurrency or cryptoasset is a digital medium of exchange that uses strong cryptography to secure transactions, control unit creation and verify the transfer of assets using distributed ledger technologies.",
+        "descripcion4": "In our roadmap you can find the entire roadmap that we will have education and future projects together with the community..",
+        "descripcion5": "A NON-fungible token, or NFT, is a special type of token cryptographic that represents something unique. Non-fungible tokens are therefore not identically interchangeable.",
+        "descripcion6": "It translates as blockchain. Basically, blockchain is a set of technologies that allow keeping a secure, decentralized, synchronized and distributed record of digital operations, without the need for third-party intermediation."
     }
 
 }

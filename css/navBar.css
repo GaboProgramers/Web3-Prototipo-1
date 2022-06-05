@@ -159,6 +159,35 @@ nav .nav-bar .logo a:hover {
     color: #03e0e4c8;
 }
 
+/* inicio seccion idiomas */
+
+.flags {
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flags .flags-item {
+    width: 30px;
+}
+
+.flags .flags-item .flags-img {
+    display: block;
+    cursor: pointer;
+}
+
+/* modo oculto para pc idiomas*/
+
+.movil-flags {
+    display: none;
+}
+
+/* modo oculto para pc de idiomas */
+
+
+/* fin seccion idiomas */
+
 @media (max-width: 790px) {
     nav .nav-bar .sidebarOpen{
         display: block;
@@ -266,5 +295,29 @@ nav .nav-bar .logo a:hover {
     .nav-links li a{
         display: block;
         margin-top: 10px;
+    }
+
+    /* traduccion version movil */
+
+    .movil-flags {
+        width: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px auto;
+    }
+    
+    .movil-flags .movil-item {
+        width: 30px;
+    }
+    
+    .movil-flags .movil-item .movil-img{
+        display: block;
+        cursor: pointer;
+    }    
+
+    /* modo oculto de idiomas para movil */
+    .flags {
+        display: none;
     }
 }
