@@ -25,6 +25,20 @@
         "descripcion4": "en nuestro roadmap podras encontrar toda la hoja de ruta que tendremos de educacion y futuros proyectos junto a la comunidad..",
         "descripcion5": "Un token NO fungible, o NFT por sus siglas en inglés, es un tipo especial de token criptográfico que representa algo único. Los tókenes no fungibles no son, por tanto, intercambiables de forma idéntica.",
         "descripcion6": "Se traduce como cadena de bloques. Básicamente, blockchain es de un conjunto de tecnologías que permiten llevar un registro seguro, descentralizado, sincronizado y distribuido de las operaciones digitales, sin necesidad de la intermediación de terceros."
+    },
+    "roadmap": {
+        "textoR-1": "Creacion De La Idea Para La Plataforma..",
+        "fechaR-1": "Q2 Mayo 2022",
+        "textoR-2": "Desarrolo De La Pagina Web - Eh Implementacion De Publicidad Para Dicha Plataforma..",
+        "fechaR-2": "Q3 Septiembre 2022",
+        "textoR-3": "Primer Paso De Publicacion Educativa..",
+        "fechaR-3": "Q4 Diciembre 2022",
+        "textoR-4": "Videos Educativos y Futuras Colaboraciones..",
+        "fechaR-4": "Q1 Marzo 2023",
+        "textoR-5": "Inicio Del Desarrollo NFT Para El Proyecto...",
+        "fechaR-5": "Q2 Junio 2023",
+        "textoR-6": "Desarrollo De Un Simulador De Mineria Activa En La Nube...",
+        "fechaR-6": "Q3 Septiembre 2023"
     }
 
 }

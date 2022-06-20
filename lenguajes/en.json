@@ -25,6 +25,20 @@
         "descripcion4": "In our roadmap you can find the entire roadmap that we will have education and future projects together with the community..",
         "descripcion5": "A NON-fungible token, or NFT, is a special type of token cryptographic that represents something unique. Non-fungible tokens are therefore not identically interchangeable.",
         "descripcion6": "It translates as blockchain. Basically, blockchain is a set of technologies that allow keeping a secure, decentralized, synchronized and distributed record of digital operations, without the need for third-party intermediation."
+    },
+    "roadmap": {
+        "textoR-1": "Creation Of The Idea For The Platform..",
+        "fechaR-1": "Q2 May 2022",
+        "textoR-2": "Development Of The Web Page - Eh Implementation Of Advertising For Said Platform..",
+        "fechaR-2": "Q3 September 2022",
+        "textoR-3": "First Step Of Educational Publication..",
+        "fechaR-3": "Q4 December 2022",
+        "textoR-4": "Educational Videos And Future Collaborations..",
+        "fechaR-4": "Q1 March 2023",
+        "textoR-5": "Start Of NFT Development For The Project...",
+        "fechaR-5": "Q2 June 2023",
+        "textoR-6": "Development Of An Active Mining Simulator In The Cloud...",
+        "fechaR-6": "Q3 September 2023"
     }
 
 }
