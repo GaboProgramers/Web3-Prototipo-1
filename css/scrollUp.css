@@ -1,0 +1,50 @@
+#ir-arriba {
+    position: fixed;
+    z-index: 1000;
+    right: 30px;
+    bottom: 25px;
+    background-color: var(--color);
+    width: 46px;
+    height: 46px;
+    color: var(--color-texto-input);
+    text-align: center;
+    border-radius: 50%;
+    transition: all .2s;
+}
+
+#ir-arriba:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#ir-arriba i {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    font-size: 25px;
+}
+
+.indicador-contenedor {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 3px;
+    border-radius: 10px;
+    z-index: 1001;
+}
+
+.indicador__scroll {
+    height: 100%;
+    width: 0;
+    background-color: var(--color-enlaces-hover);
+}
+
+.ocultar {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.mostrar {
+    opacity: 1;
+    visibility: visible;
+}
