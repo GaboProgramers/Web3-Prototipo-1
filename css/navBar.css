@@ -188,6 +188,15 @@ nav .nav-bar .logo a:hover {
 
 /* fin seccion idiomas */
 
+
+/* seccion de coinmarketCap inicio */
+
+    .coinmarketcap {
+        margin-top: 50px;
+    }
+
+/* seccion de coinmarketCap fin */
+
 @media (max-width: 790px) {
     nav .nav-bar .sidebarOpen{
         display: block;

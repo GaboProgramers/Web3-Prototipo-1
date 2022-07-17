@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formato de registro</title>
+
+    <!-- FontAwesome Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="./css/root.css">
+    <link rel="stylesheet" href="./css/premiun.css">
+    <link rel="stylesheet" href="./css/navBar.css">
+    <link rel="stylesheet" href="./css/pools.css">
+
+    <!-- icons -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+    <!-- particulas -->
+
+    <div id="particles-js"></div>
+
+    <nav class="navegacion">
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen'></i>
+            <span class="logo navLogo"><a href="index.html">CryptoCode</a></span>
+
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#">CryptoCode</a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Acerca De</a></li>
+                    <li><a href="nft.html">Colección NFT</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+
+                <div class="open-source__movil">
+                    <h3 class="movil__titulo">Criptomonedas Aceptadas</h3>
+                    <div class="img__cripto">
+                        <a class="enlaces__crypto" href="https://coinmarketcap.com/currencies/bitcoin/"
+                            target="_blank"><img loading="lazy" src="./img/bitcoin-removebg-preview.png"
+                                alt="bitcoin"></a>
+                        <a class="enlaces__crypto" href="https://coinmarketcap.com/currencies/ethereum/"
+                            target="_blank"><img loading="lazy" src="./img/eyhereum-removebg-preview.png"
+                                alt="Ethereum"></a>
+                        <a class="enlaces__crypto" href="https://coinmarketcap.com/currencies/litecoin/"
+                            target="_blank"><img loading="lazy" src="./img/litecoin-removebg-preview.png"
+                                alt="Litecoin"></a>
+                        <a class="enlaces__crypto" href="https://coinmarketcap.com/currencies/tron/"
+                            target="_blank"><img loading="lazy" src="./img/tron-removebg-preview.png" alt="Tron"></a>
+                        <a class="enlaces__crypto" href="https://coinmarketcap.com/currencies/dogecoin/"
+                            target="_blank"><img loading="lazy" src="./img/Dogecoin-removebg-preview.png"
+                                alt="Dogecoin"></a>
+                    </div>
+                    <p class="open__parrafo">
+                        Podremos generar ingresos pasivos en estas 5 criptomonedas en el futuro proximo de la
+                        plataforma, esperamos el apoyo de la comunidad la cual iremos generando <span
+                            class="span">organicamente mediante redes sociales y comunidades ya existentes...</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="login-admin">
+                <div class="login-registro">
+                    <a class="enlace-admin" href="/login.html"><i class='bx bx-user'></i></a>
+                </div>
+
+                <div class="premiun-seccion">
+                    <a class="enlace-admin" href="/premiun.html"><i class='bx bxs-crown'></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="titulo">
+        <h1 class="titulo-premiun">Sección <span>pool`s</span></h1>
+        <p class="texto-premiun"> Podras Agregar Liquidez a Tus Pares De Monedas Que Quieras</p>
+    </div>
+
+    <!--  seccion pool´s -->
+
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+        <div id="tradingview_8338f"></div>
+        <div class="tradingview-widget-copyright"><a href="https://es.tradingview.com/symbols/BTCUSDT/?exchange=BINANCE"
+                rel="noopener" target="_blank"><span class="blue-text">BTCUSDT Gráfico</span></a> por TradingView</div>
+        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+        <script type="text/javascript">
+            new TradingView.widget(
+                {
+                    "autosize": true,
+                    "symbol": "BINANCE:BTCUSDT",
+                    "interval": "60",
+                    "timezone": "Etc/UTC",
+                    "theme": "light",
+                    "style": "1",
+                    "locale": "es",
+                    "toolbar_bg": "#f1f3f6",
+                    "enable_publishing": false,
+                    "allow_symbol_change": true,
+                    "container_id": "tradingview_8338f"
+                }
+            );
+        </script>
+    </div>
+    <!-- TradingView Widget END -->
+
+
+
+
+    <!-- scripts de particulas -->
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <!-- script  -->
+
+
+    <script src="./js/particulas.js"></script>
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>
