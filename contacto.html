@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formato de registro</title>
+
+    <!-- FontAwesome Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="./css/root.css">
+    <!-- <link rel="stylesheet" href="./css/style2.css"> -->
+    <link rel="stylesheet" href="./css/contacto.css">
+</head>
+
+<body>
+
+    <!-- particulas -->
+
+    <div id="particles-js"></div>
+
+    <!-- formulario de contacto --> 
+
+    <section class="contacto">
+        <div class="contenido__contacto">
+            <form id="form" action="" class="formulario">
+                <h3 class="titulo">Hablemos</h3>
+                <label for="name">Nombre Completo <span>*</span></label>
+                <input name="name" required type="text" id="text" placeholder="Gabriel">
+                <label for="email">Correo Electronico <span>*</span></label>
+                <input name="email" type="text" id="email" required placeholder="Correo Electronico">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" cols="30" rows="10"></textarea>
+                <button type="submit" class="btn primary full">Enviar mensaje</button>
+            </form>
+            <a href="mailto:gyostin604@gmail.com" id="trucazo">mail</a>
+        </div>
+    </section>
+
+    <!-- scripts de particulas -->
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <!-- script  -->
+
+    <script>
+        const $form = document.querySelector('#form');
+        const $buttonMailto = document.querySelector('#trucazo');
+
+        $form.addEventListener('submit', handleSubmit);
+
+        function handleSubmit(event) {
+            event.preventDefault()
+           const form = new FormData(this)
+           $buttonMailto.setAttribute('href', `mailto:gyostin604@gmail.com?subject=Nombre = ${form.get('name')} , Correo = ${form.get('email')}&body=${form.get('message')}`)
+           $buttonMailto.click()
+        }
+
+    </script>
+    
+    <script src="./js/particulas.js"></script>
+
+</body>
+
+</html>
