@@ -198,3 +198,18 @@ body {
     font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/* rollercoin */
+
+.rollercoin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 40px;
+}
+
+@media screen and (max-width: 790px) {
+    .rollercoin img {
+        display: none;
+    }
+}

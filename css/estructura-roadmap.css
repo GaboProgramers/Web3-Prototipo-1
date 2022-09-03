@@ -81,6 +81,12 @@
 
 }
 
+.rollercoin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media screen and (max-width: 790px){
     .titulo__roadmap {
         font-size: 16px;
