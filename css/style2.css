@@ -205,6 +205,11 @@ body {
     display: none;
 }
 
+.rollerCoin_Movil img {
+    width: 100%;
+    margin: 0 auto;
+}
+
 @media screen and (max-width: 790px) {
     .rollerCoin_Movil {
         display: block;
