@@ -81,7 +81,8 @@
 
 }
 
-.rollercoin {
+.rollerCoin {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,5 +102,9 @@
     .roadmap__evento::after {
         left: calc(50% + 10px);
         border: .8px solid var(--color-enlaces-hover);
+    }
+
+    .rollerCoin {
+        width: 60%;
     }
 }
