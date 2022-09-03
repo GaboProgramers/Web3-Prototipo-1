@@ -201,15 +201,26 @@ body {
 
 /* rollercoin */
 
-.rollercoin {
+.rollerCoin {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 40px;
+}
+
+.rollerCoin_Movil {
+    display: none;
 }
 
 @media screen and (max-width: 790px) {
-    .rollercoin img {
+    .rollerCoin_web {
         display: none;
+    }
+
+    .rollerCoin_Movil {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
