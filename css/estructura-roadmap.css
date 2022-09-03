@@ -88,6 +88,10 @@
     align-items: center;
 }
 
+.rollerCoin_Movil {
+    display: none;
+}
+
 @media screen and (max-width: 790px){
     .titulo__roadmap {
         font-size: 16px;
@@ -104,7 +108,14 @@
         border: .8px solid var(--color-enlaces-hover);
     }
 
-    .rollerCoin {
-        width: 60%;
+    .rollerCoin_web {
+        display: none;
+    }
+
+    .rollerCoin_Movil {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
