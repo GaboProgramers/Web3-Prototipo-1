@@ -56,9 +56,8 @@
                 <h3>Aqui Sera La Sección para la galeria nft del sitio web <b>#EarnToEducate</b></h3>
 
                 <div class="wallet">
-                    <div class="metamask">
-                        <img loading="lazy" src="./img/metamask-removebg-preview.png" alt="metamask">
-                        <a href="https://www.metamask.com" target="_blank">Metamask</a>
+                    <div>
+                        <button id="connect-button"><img src="./img/metamask-removebg-preview.png" alt=""> CONNECT</button>
                     </div>
 
                     <div class="metamask">
@@ -80,6 +79,26 @@
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="./js/simplyCountdown.min.js"></script>
     <script src="./js/contador-nft.js"></script>
+
+    <script>
+        document.getElementById('connect-button').addEventListener('click', event => {
+            let account;
+            let button = event.target;
+            ethereum.request({method: 'eth_requestAccounts'}).then(accounts => {
+                account = accounts[0];
+                console.log(account);
+
+                button.textContent = account;
+
+                ethereum.request({method: 'eth_getBalance', params: [account, 'latest']}).then(result => {
+                    console.log(result);
+                    let wei = parseInt(result,16);
+                    let balance = wei / (10**18);
+                    console.log(balance + "ETH")
+                });
+            });
+        });
+    </script>
 
     <!-- scripts -->
 

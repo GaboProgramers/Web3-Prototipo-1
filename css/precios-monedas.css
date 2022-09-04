@@ -1,0 +1,18 @@
+.precios-monedas {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    width: 100%;
+    background-color: var(--color-secundario-body);
+}
+
+.precios-monedas .coinmarketcap-currency-widget {
+    color: white;
+}
+
+@media screen and (max-width: 790px) {
+    .precios-monedas {
+        flex-direction: column;
+    }
+}
