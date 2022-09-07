@@ -131,6 +131,7 @@ body {
 .seccion-primera .reclamo button {
     display: block;
     padding: 10px 30px;
+    margin: 15px 0;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--color-enlaces-hover);
@@ -218,7 +219,8 @@ th, td {
     font-size: 20px;
     color: var(--color-enlaces-hover);
     font-weight: 300;
-    margin: 5px 0 15px 0;
+    margin: 10px;
+    padding: 10px;
 }
 
 .footer a {
@@ -263,6 +265,22 @@ th, td {
 
     .seccion-primera {
         width: 100%;
+    }
 
+    .contenedor-tabla {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .footer {
+        width: 100%;
+        text-align: center;
+        text-transform: capitalize;
+        border-top: 2px solid var(--color-primario-header);
+    }
+
+    .footer .derechos {
+        margin-bottom: 40px;
+        border-bottom: 2px solid var(--color-primario-header);
     }
 }
