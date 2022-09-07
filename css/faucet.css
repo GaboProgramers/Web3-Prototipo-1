@@ -62,10 +62,12 @@ body {
     background-color: var(--color-secundario-body);
 }
 
+/* primera seccion */
+
 .seccion-primera {
     width: 50%;
-    /* border: 1px solid white; */
     padding: 10px;
+    margin: 5px;
 }
 
 .seccion-primera .Temporizador {
@@ -136,6 +138,107 @@ body {
     border-radius: 10px;
     cursor: pointer;
 }
+
+/* segunda seccion */
+
+.contenedor-tabla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px;
+    width: 50%;
+    padding: 20px 20px;
+    box-sizing: content-box;
+}
+
+.tabla-de-reclamos {
+    text-align: center;
+    font-size: 25px;
+    padding: 20px 50px;
+    width: 100%;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-enlaces-hover);
+    font-weight: 400;
+    letter-spacing: 1.2PX;
+    border-bottom: 1px solid var(--color-primario-header);
+    border-radius: 10px;
+}
+
+.contenedor-tabla .cart-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    /* border: 1px solid red; */
+}
+
+/* seccion tabla */
+
+table {
+    width: 100%;
+    /* border: 1px solid green; */
+    padding: 15px;
+    color: aqua;
+    border-collapse: collapse;
+}
+
+th, td {
+    width: 50%;
+    text-align: center;
+    vertical-align: top;
+    padding: 10px;
+    border: 1px solid white;
+}
+
+.odd th, .odd td {
+    background-color: #25292c;
+}
+
+.even td {
+    background-color: #454d55;
+}
+
+
+/* seccion footer */
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: var(--color-secundario-body);
+}
+
+.footer .derechos {
+    font-size: 20px;
+    color: var(--color-enlaces-hover);
+    font-weight: 300;
+    margin: 5px 0 15px 0;
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--pinterest);
+    font-weight: bold;
+}
+
+#fechaLocal {
+    font-size: 20px;
+    color: var(--color-enlaces-inicial);
+    font-weight: 600;
+}
+
+#hora {
+    font-size: 20px;
+    color: var(--color-enlaces-inicial);
+    font-weight: 600;
+}
+
 
 @media screen and (max-width: 790px) {
 

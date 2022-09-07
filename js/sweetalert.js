@@ -18,3 +18,35 @@ btn.addEventListener("click", () => {
         title: 'Roll Seleccionado'
       })
 })
+
+// seccion prueba
+
+/* let numero = 5;
+function conteo(){
+  console.log(`lanzamiento en ${numero}  segundos`);
+  numero--;
+  if (numero == -1){
+    clearInterval(lanzamiento);
+  }
+}
+
+let lanzamiento = setInterval(conteo, 1000); */
+
+let fechaLocal = document.getElementById('fechaLocal');
+let horaLocal = document.getElementById('hora');
+
+let fecha = new Date();
+
+let diaSemana = ['Domingo', 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado'];
+
+let mesAnyo = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto',
+ 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre',];
+
+ fechaLocal.innerHTML = `${diaSemana[fecha.getDay()]}, ${fecha.getDate()} De ${mesAnyo[fecha.getMonth()]} De ${fecha.getFullYear()}`;
+
+
+
+setInterval(() => {
+  let hora = new Date();
+  horaLocal.innerHTML = hora.toLocaleTimeString();
+}, 1000);
