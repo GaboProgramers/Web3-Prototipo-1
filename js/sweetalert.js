@@ -1,3 +1,26 @@
+/* navegacion interna */
+
+const body = document.querySelector("body"),
+      nav = document.querySelector(".lista-interna"),
+      sidebarOpen = document.querySelector(".desplegable"),
+      siderbarClose = document.querySelector(".siderbarClose");
+ 
+      
+//   js code to toggle sidebar
+sidebarOpen.addEventListener("click" , () =>{
+    nav.classList.add("active");
+});
+
+body.addEventListener("click" , e =>{
+    let clickedElm = e.target;
+
+    if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains(".sidebarClose")){
+        nav.classList.remove("active");
+    }
+});
+
+/* swetAlert */
+
 var btn = document.getElementById("btn");
 
 btn.addEventListener("click", () => {
@@ -15,22 +38,37 @@ btn.addEventListener("click", () => {
       
       Toast.fire({
         icon: 'success',
-        title: 'Roll Seleccionado'
+        title: 'Ganaste - 150 WWC'
       })
-})
+});
 
-// seccion prueba
+//seccion ocultar mostrar
 
-/* let numero = 5;
-function conteo(){
-  console.log(`lanzamiento en ${numero}  segundos`);
-  numero--;
-  if (numero == -1){
-    clearInterval(lanzamiento);
+let button = document.getElementById('btn');
+let textOcultar = document.getElementById('hideText');
+
+button.addEventListener('click', toggleText);
+
+function toggleText() {
+  textOcultar.classList.toggle('show');
+
+  if(textOcultar.classList.contains('show')) {
+    function tiempoEspera() {
+      textOcultar.innerHTML = 'Reclamo Exitoso Vuelve En 60min'
+    }
+  }
+
+  setTimeout(tiempoEspera, 1);
+
+  if(textOcultar.classList.contains('show')) {
+    button.innerHTML = 'Ganaste';
+  }
+  else {
+    button.innerHTML = 'Roll Now'
   }
 }
 
-let lanzamiento = setInterval(conteo, 1000); */
+// seccion hora y fecha
 
 let fechaLocal = document.getElementById('fechaLocal');
 let horaLocal = document.getElementById('hora');

@@ -6,6 +6,116 @@ body {
     background-color: var(--color-secundario-body);
 }
 
+/* seccion navegacion interna */
+
+.dashboar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin: 100px auto;
+    padding: 20px 0px;
+    background-color: var(--color-secundario-body);
+    border: 1px solid var(--color-primario-header);
+    border-radius: 10px;
+}
+
+.dashboar .lista {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 5px 0px 20px;
+    border: 3px double var(--color-primario-header);
+    border-radius: 10px;
+}
+
+.lista ul, .lista ul a {
+    font-size: 24px;
+    margin: 10px 20px;
+    text-decoration: none;
+    color: var(--color-enlaces-hover);
+}
+
+.lista ul a:hover {
+    border-bottom: 1px solid var(--color-enlaces-inicial);
+}
+
+.dashboar .balance {
+    width: 50%;
+    margin: 0px 5px;
+    padding: 5px;
+}
+
+.balance .puntos-win {
+    float: right;
+    margin-right: 30px;
+    padding: 10px 30px;
+    border: 1px solid var(--color-primario-header);
+    border-radius: 15px;
+    font-size: 20px;
+    color: var(--color-enlaces-hover);
+}
+
+.dashboar .conjunto-desplegable {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboar .conjunto-desplegable .desplegable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 50%;
+    color: var(--color-enlaces-inicial);
+    border: 1px solid var(--color-primario-header);
+    cursor: pointer;
+}
+
+.dashboar .conjunto-desplegable .desplegable:hover {
+    color: var(--color-enlaces-hover);
+    border: 1px solid var(--color-enlaces-hover);
+}
+
+.dashboar .lista-interna {
+    display: none;
+    width: 30%;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 10px;
+    padding: 14px 14px;
+    position: absolute;
+    top: 98px;
+    right: 10px;
+    transform: translate(20px);
+    background-color: var(--color-secundario-body);
+}
+
+.dashboar .lista-interna .siderbarClose {
+    position: absolute;
+    font-size: 30px;
+    right: 20px;
+    border: 1px solir red;
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--color-enlaces-hover);
+}
+
+.dashboar .lista-interna.active {
+    display: block;
+}
+
+.lista-interna ul {
+    font-size: 20px;
+    color: white;
+    margin: 10px 0;
+}
+
 .titulo {
     display: flex;
     justify-content: center;
@@ -128,7 +238,7 @@ body {
     align-items: center;
 }
 
-.seccion-primera .reclamo button {
+.seccion-primera .reclamo .btn {
     display: block;
     padding: 10px 30px;
     margin: 15px 0;
@@ -138,6 +248,24 @@ body {
     font-weight: 600;
     border-radius: 10px;
     cursor: pointer;
+}
+
+.seccion-primera .texto-mostrar {
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 18px;
+    padding: 15px;
+    color: white;
+    background-color: black;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
 }
 
 /* segunda seccion */
@@ -282,5 +410,35 @@ th, td {
     .footer .derechos {
         margin-bottom: 40px;
         border-bottom: 2px solid var(--color-primario-header);
+    }
+
+    /* seccion navegacion interna */
+
+    .dashboar {
+        flex-direction: column; 
+        position: relative;
+    }
+
+    .dashboar .lista {
+        width: 90%;
+        margin: 0px 5px 0px 10px;
+    }
+
+    .dashboar .balance {
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+
+    .dashboar .desplegable {
+        margin-top: -53px;
+    }
+
+    .dashboar .lista-interna {
+        text-align: center;
+        width: 50%;
+        top: 163px;
+        right: 120px;
+        transform: translate(20px);
     }
 }
