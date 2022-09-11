@@ -1,21 +1,20 @@
 /* navegacion interna */
 
-const nav = document.querySelector(".lista-interna"),
-      sidebarOpen = document.querySelector(".desplegable"),
-      siderbarClose = document.querySelector(".siderbarClose");
- 
-      
-//   js code to toggle sidebar
-sidebarOpen.addEventListener("click" , () =>{
-    nav.classList.add("active");
+const navToggle = document.querySelector('.navToggle');
+const listaInterna = document.querySelector('.lista-interna');
+const conjuntoDesplegable = document.querySelector('.conjunto-desplegable');
+
+navToggle.addEventListener('click', () => {
+  listaInterna.classList.toggle('active');
 });
 
-body.addEventListener("click" , e =>{
-    let clickedElm = e.target;
-    if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains(".conjunto-desplegable")){
-        nav.classList.remove("active");
-    }
-});
+conjuntoDesplegable.addEventListener('click', e => {
+  let clickedElm = e.target;
+
+  if(!clickedElm.classList.contains('navToggle') && !clickedElm.classList.contains('.lista-interna')){
+      listaInterna.classList.remove('active')
+  }
+})
 
 /* swetAlert */
 

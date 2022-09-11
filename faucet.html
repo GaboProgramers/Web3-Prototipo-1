@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/faucet.css" />
     <link rel="stylesheet" href="./css/root.css" />
     <link rel="stylesheet" href="./css/navBar.css" />
-    <link rel="stylesheet" href="./css/progressBar.css" />
+    <link rel="stylesheet" href="./css/spiner.css" />
 
     <!-- link externos -->
 
@@ -30,15 +30,17 @@
 
     <div id="particles-js"></div>
 
-    <!-- progressBar -->
-
-    <div class="container" id="container">
-      <div class="preloader">
-        <p>Cargando...</p>
+    <!-- nuevo spiner -->
+    <div class="cargador">
+      <div class="spiner">
+        <div class="spiner">
+          <div class="spiner">
+            <div class="spiner"></div>
+          </div>
+        </div>
       </div>
     </div>
-
-    <!-- fin progressBar -->
+    <!-- fin spiner -->
 
     <nav class="navegacion">
       <div class="nav-bar">
@@ -155,7 +157,7 @@
     </nav>
 
     <section>
-      <div class="dashboar dashboarClear" id="dashboar">
+      <div class="dashboar" id="dashboar">
         <div class="lista">
           <ul>
             <a href="./index.html">DashBoard</a>
@@ -173,25 +175,24 @@
 
         <div class="conjunto-desplegable">
           <div class="desplegable">
-            <i class="bx bx-menu sidebarOpen"></i>
+            <i class="bx bx-menu navToggle"></i>
           </div>
 
           <div class="lista-interna">
-            <i class="bx bx-x siderbarClose"></i>
             <ul>
-              casa
+              <a href="#">Casa</a>
             </ul>
             <ul>
-              carro
+              <a href="#">Carro</a>
             </ul>
             <ul>
-              moto
+              <a href="#">Moto</a>
             </ul>
             <ul>
-              bagon
+              <a href="#">Bagon</a>
             </ul>
             <ul>
-              muro
+              <a href="#">Muro</a>
             </ul>
           </div>
         </div>
@@ -348,7 +349,7 @@
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="./js/progressBar.js" defer></script>
+    <script src="./js/spiner.js" defer></script>
     <script src="./js/particulas.js" defer></script>
     <script src="./js/sweetalert.js" defer></script>
     <script src="./js/app.js" defer></script>
