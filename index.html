@@ -1,435 +1,555 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- metadatos importantes para los buscadores -->
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Web3 CryptoCode</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content="Web3 CryptoCode">
-    <meta name="description"
-        content="En CriptoCode Los Usuarios Podran Educarse En La Web3 De Forma Gratuita - Premium">
-    <meta name="google" content="notranslate">
-    <meta name="og:url" content="https://gaboprogramers.github.io/Web3-Prototipo-1/">
-    <meta name="og:type" content="website">
-    <meta name="og:title" content="Web3 CryptoCode">
-    <meta name="og:description"
-        content="En CriptoCode Los Usuarios Podran Educarse En La Web3 De Forma Gratuita - Premium">
-    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="pragma" content="no-cache">
-    <meta http-equiv="expires" content="0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Web3 CryptoCode" />
+    <meta
+      name="description"
+      content="En CriptoCode Los Usuarios Podran Educarse En La Web3 De Forma Gratuita - Premium"
+    />
+    <meta name="google" content="notranslate" />
+    <meta
+      name="og:url"
+      content="https://gaboprogramers.github.io/Web3-Prototipo-1/"
+    />
+    <meta name="og:type" content="website" />
+    <meta name="og:title" content="Web3 CryptoCode" />
+    <meta
+      name="og:description"
+      content="En CriptoCode Los Usuarios Podran Educarse En La Web3 De Forma Gratuita - Premium"
+    />
+    <meta
+      http-equiv="cache-control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
 
     <!-- link de apis y conecciones importantes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <!-- icono principal -->
-    <link rel="icon" type="image/png" href="./img/icono-CryptoCode.png">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./img/icono-CryptoCode.png" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- estilos css -->
-    <link rel="stylesheet" href="./css/root.css">
-    <link rel="stylesheet" href="./css/navBar.css">
-    <link rel="stylesheet" href="./css/cabecera-principal.css">
-    <link rel="stylesheet" href="./css/preguntas-f.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/estructura-roadmap.css">
-    <link rel="stylesheet" href="./css/selectbox.css">
-    <link rel="stylesheet" href="./css/filtrado.css">
-    <link rel="stylesheet" href="./css/distribucion.css">
-    <link rel="stylesheet" href="./css/sliderContenedor.css">
-    <link rel="stylesheet" href="./css/scrollUp.css">
-    <link rel="stylesheet" href="./css/precios-monedas.css">
+    <link rel="stylesheet" href="./css/root.css" />
+    <link rel="stylesheet" href="./css/navBar.css" />
+    <link rel="stylesheet" href="./css/cabecera-principal.css" />
+    <link rel="stylesheet" href="./css/preguntas-f.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/estructura-roadmap.css" />
+    <link rel="stylesheet" href="./css/selectbox.css" />
+    <link rel="stylesheet" href="./css/filtrado.css" />
+    <link rel="stylesheet" href="./css/distribucion.css" />
+    <link rel="stylesheet" href="./css/sliderContenedor.css" />
+    <link rel="stylesheet" href="./css/scrollUp.css" />
+    <link rel="stylesheet" href="./css/precios-monedas.css" />
 
     <!-- librerias y scripts -->
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
 
     <!-- ===== Boxicons CSS ===== -->
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
-
-<body>
+  <body class="hidden" id="hidden">
 
     <div class="indicador-contenedor">
-        <div class="indicador__scroll"></div>
+      <div class="indicador__scroll"></div>
     </div>
 
     <div id="ir-arriba" class="">
-        <i class="fas fa-rocket"></i>
+      <i class="fas fa-rocket"></i>
     </div>
 
     <div id="particles-js"></div>
 
     <nav class="navegacion">
-        <div class="nav-bar">
-            <i class='bx bx-menu sidebarOpen'></i>
-            <span class="logo navLogo"><a href="#">CryptoCode</a></span>
+      <div class="nav-bar">
+        <i class="bx bx-menu sidebarOpen abrirMenu"></i>
+        <span class="logo navLogo"><a href="#">CryptoCode</a></span>
 
-            <div class="menu">
-                <div class="logo-toggle">
-                    <span class="logo"><a href="#">CryptoCode</a></span>
-                    <i class='bx bx-x siderbarClose'></i>
-                </div>
+        <div class="menu">
+          <div class="logo-toggle">
+            <span class="logo"><a href="#">CryptoCode</a></span>
+            <i class="bx bx-x siderbarClose"></i>
+          </div>
 
-                <ul class="nav-links">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="analisisG.html">Acerca De</a></li>
-                    <li><a href="nft.html">Colección NFT</a></li>
-                    <li><a href="contacto.html">Contact</a></li>
-                    <li><a href="faucet.html">faucet</a></li>
-                </ul>
+          <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="analisisG.html">Acerca De</a></li>
+            <li><a href="nft.html">Colección NFT</a></li>
+            <li><a href="contacto.html">Contact</a></li>
+            <li><a href="faucet.html">faucet</a></li>
+          </ul>
 
-                <div id="movilFlags" class="movil-flags">
-                    <div class="movil-item" data-language="es">
-                        <img class="movil-img" src="./img/es.svg" alt="español">
-                    </div>
-                    <div class="movil-item" data-language="en">
-                        <img class="movil-img" src="./img/en.svg" alt="ingles">
-                    </div>
-                </div>
-
-                <div class="open-source__movil">
-                    <h3 class="movil__titulo">Criptomonedas Aceptadas</h3>
-                    <div class="img__cripto">
-                        <a class="enlaces__crypto" href="https://coinmarketcap.com/currencies/bitcoin/"
-                            target="_blank"><img loading="lazy" src="./img/bitcoin-removebg-preview.png"
-                                alt="bitcoin"></a>
-                        <a class="enlaces__crypto" href="https://coinmarketcap.com/currencies/ethereum/"
-                            target="_blank"><img loading="lazy" src="./img/eyhereum-removebg-preview.png"
-                                alt="Ethereum"></a>
-                        <a class="enlaces__crypto" href="https://coinmarketcap.com/currencies/litecoin/"
-                            target="_blank"><img loading="lazy" src="./img/litecoin-removebg-preview.png"
-                                alt="Litecoin"></a>
-                        <a class="enlaces__crypto" href="https://coinmarketcap.com/currencies/tron/"
-                            target="_blank"><img loading="lazy" src="./img/tron-removebg-preview.png" alt="Tron"></a>
-                        <a class="enlaces__crypto" href="https://coinmarketcap.com/currencies/dogecoin/"
-                            target="_blank"><img loading="lazy" src="./img/Dogecoin-removebg-preview.png"
-                                alt="Dogecoin"></a>
-                    </div>
-                    <p class="open__parrafo">
-                        Podremos generar ingresos pasivos en estas 5 criptomonedas en el futuro proximo de la
-                        plataforma, esperamos el apoyo de la comunidad la cual iremos generando <span
-                            class="span">organicamente mediante redes sociales y comunidades ya existentes...</span>
-                    </p>
-                </div>
+          <div id="movilFlags" class="movil-flags">
+            <div class="movil-item" data-language="es">
+              <img class="movil-img" src="./img/es.svg" alt="español" />
             </div>
-
-            <div class="login-admin">
-                <div class="login-registro">
-                    <a class="enlace-admin" href="./login.html"><i class='bx bx-user'></i></a>
-                </div>
-
-                <div class="premiun-seccion">
-                    <a class="enlace-admin" href="./premiun.html"><i class='bx bxs-crown'></i></a>
-                </div>
+            <div class="movil-item" data-language="en">
+              <img class="movil-img" src="./img/en.svg" alt="ingles" />
             </div>
+          </div>
 
-            <div id="flags" class="flags">
-                <div class="flags-item" data-language="es">
-                    <img class="flags-img" src="./img/es.svg" alt="español">
-                </div>
-                <div class="flags-item" data-language="en">
-                    <img class="flags-img" src="./img/en.svg" alt="ingles">
-                </div>
+          <div class="open-source__movil">
+            <h3 class="movil__titulo">Criptomonedas Aceptadas</h3>
+            <div class="img__cripto">
+              <a
+                class="enlaces__crypto"
+                href="https://coinmarketcap.com/currencies/bitcoin/"
+                target="_blank"
+                ><img
+                  loading="lazy"
+                  src="./img/bitcoin-removebg-preview.png"
+                  alt="bitcoin"
+              /></a>
+              <a
+                class="enlaces__crypto"
+                href="https://coinmarketcap.com/currencies/ethereum/"
+                target="_blank"
+                ><img
+                  loading="lazy"
+                  src="./img/eyhereum-removebg-preview.png"
+                  alt="Ethereum"
+              /></a>
+              <a
+                class="enlaces__crypto"
+                href="https://coinmarketcap.com/currencies/litecoin/"
+                target="_blank"
+                ><img
+                  loading="lazy"
+                  src="./img/litecoin-removebg-preview.png"
+                  alt="Litecoin"
+              /></a>
+              <a
+                class="enlaces__crypto"
+                href="https://coinmarketcap.com/currencies/tron/"
+                target="_blank"
+                ><img
+                  loading="lazy"
+                  src="./img/tron-removebg-preview.png"
+                  alt="Tron"
+              /></a>
+              <a
+                class="enlaces__crypto"
+                href="https://coinmarketcap.com/currencies/dogecoin/"
+                target="_blank"
+                ><img
+                  loading="lazy"
+                  src="./img/Dogecoin-removebg-preview.png"
+                  alt="Dogecoin"
+              /></a>
             </div>
+            <p class="open__parrafo">
+              Podremos generar ingresos pasivos en estas 5 criptomonedas en el
+              futuro proximo de la plataforma, esperamos el apoyo de la
+              comunidad la cual iremos generando
+              <span class="span"
+                >organicamente mediante redes sociales y comunidades ya
+                existentes...</span
+              >
+            </p>
+          </div>
         </div>
+
+        <div class="login-admin">
+          <div class="login-registro">
+            <a class="enlace-admin" href="./login.html"
+              ><i class="bx bx-user"></i
+            ></a>
+          </div>
+
+          <div class="premiun-seccion">
+            <a class="enlace-admin" href="./premiun.html"
+              ><i class="bx bxs-crown"></i
+            ></a>
+          </div>
+        </div>
+
+        <div id="flags" class="flags">
+          <div class="flags-item" data-language="es">
+            <img class="flags-img" src="./img/es.svg" alt="español" />
+          </div>
+          <div class="flags-item" data-language="en">
+            <img class="flags-img" src="./img/en.svg" alt="ingles" />
+          </div>
+        </div>
+      </div>
     </nav>
 
     <section class="coinmarketcap">
-        <!-- TradingView Widget BEGIN -->
-        <div class="tradingview-widget-container">
-            <div class="tradingview-widget-container__widget"></div>
-            <div class="tradingview-widget-copyright"><a href="https://es.tradingview.com/markets/" rel="noopener"
-                    target="_blank"><span class="blue-text">Mercados</span></a> de TradingView</div>
-            <script type="text/javascript"
-                src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
-                    {
-                        "symbols"; [
-                            {
-                                "description": "bitcoin",
-                                "proName": "BINANCE:BTCUSDT"
-                            },
-                            {
-                                "description": "ethereum",
-                                "proName": "BINANCE:ETHUSDT"
-                            },
-                            {
-                                "description": "solana",
-                                "proName": "BINANCE:SOLUSDT"
-                            },
-                            {
-                                "description": "cardano",
-                                "proName": "BINANCE:ADAUSDT"
-                            },
-                            {
-                                "description": "binance coin",
-                                "proName": "BINANCE:BNBUSDT"
-                            },
-                            {
-                                "description": "rune",
-                                "proName": "BINANCE:RUNEUSDT"
-                            }
-                        ],
-                           {"showSymbolLogo": true,
-                                "colorTheme": "light",
-                                    "isTransparent": false,
-                                        "displayMode": "adaptive",
-                                            "locale": "es"} 
-                    }
-                </script>
+      <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright">
+          <a
+            href="https://es.tradingview.com/markets/"
+            rel="noopener"
+            target="_blank"
+            ><span class="blue-text">Mercados</span></a
+          >
+          de TradingView
         </div>
-        <!-- TradingView Widget END -->
+        <script
+          type="text/javascript"
+          src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+          async
+        >
+          {
+              "symbols"; [
+                  {
+                      "description": "bitcoin",
+                      "proName": "BINANCE:BTCUSDT"
+                  },
+                  {
+                      "description": "ethereum",
+                      "proName": "BINANCE:ETHUSDT"
+                  },
+                  {
+                      "description": "solana",
+                      "proName": "BINANCE:SOLUSDT"
+                  },
+                  {
+                      "description": "cardano",
+                      "proName": "BINANCE:ADAUSDT"
+                  },
+                  {
+                      "description": "binance coin",
+                      "proName": "BINANCE:BNBUSDT"
+                  },
+                  {
+                      "description": "rune",
+                      "proName": "BINANCE:RUNEUSDT"
+                  }
+              ],
+                 {"showSymbolLogo": true,
+                      "colorTheme": "light",
+                          "isTransparent": false,
+                              "displayMode": "adaptive",
+                                  "locale": "es"}
+          }
+        </script>
+      </div>
+      <!-- TradingView Widget END -->
     </section>
 
     <section>
-        <div class="cabecera-container">
-            <div class="cabecera__titulo">
-                <span class="texto primer-texto">Soy Un</span>
-                <span class="texto segundo-texto"> Youtuber </span>
+      <div class="cabecera-container">
+        <div class="cabecera__titulo">
+          <span class="texto primer-texto">Soy Un</span>
+          <span class="texto segundo-texto"> Youtuber </span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="precios-monedas">
+        <div
+          class="coinmarketcap-currency-widget"
+          data-currencyid="1"
+          data-base="USD"
+          data-secondary=""
+          data-ticker="true"
+          data-rank="true"
+          data-marketcap="true"
+          data-volume="true"
+          data-statsticker="true"
+          data-stats="USD"
+        ></div>
+
+        <div
+          class="coinmarketcap-currency-widget"
+          data-currencyid="1027"
+          data-base="USD"
+          data-secondary=""
+          data-ticker="true"
+          data-rank="true"
+          data-marketcap="true"
+          data-volume="true"
+          data-statsticker="true"
+          data-stats="USD"
+        ></div>
+
+        <div
+          class="coinmarketcap-currency-widget"
+          data-currencyid="1839"
+          data-base="USD"
+          data-secondary=""
+          data-ticker="true"
+          data-rank="true"
+          data-marketcap="true"
+          data-volume="true"
+          data-statsticker="true"
+          data-stats="USD"
+        ></div>
+
+        <div
+          class="coinmarketcap-currency-widget"
+          data-currencyid="3077"
+          data-base="USD"
+          data-secondary=""
+          data-ticker="true"
+          data-rank="true"
+          data-marketcap="true"
+          data-volume="true"
+          data-statsticker="true"
+          data-stats="USD"
+        ></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="contenedor__desplegable" data-aos="flip-up">
+        <form action="">
+          <div class="desplegable__selectbox">
+            <div class="desplegable__select" id="select">
+              <div class="contenido__select">
+                <h1 class="titulo__select">Tips Cryptos</h1>
+                <p class="descripcion__select">
+                  Pequeños tips que quizas no conocias del mundo crypto..
+                </p>
+              </div>
+              <i class="desplegable__icono fas fa-angle-down"></i>
             </div>
-        </div>
-    </section>
 
-    <section>
-        <div class="precios-monedas">
-            <div class="coinmarketcap-currency-widget" data-currencyid="1" data-base="USD" data-secondary="" 
-            data-ticker="true" data-rank="true" data-marketcap="true" data-volume="true" data-statsticker="true" 
-            data-stats="USD"></div>
+            <!-- opciones -->
 
-            <div class="coinmarketcap-currency-widget" data-currencyid="1027" data-base="USD" data-secondary="" 
-            data-ticker="true" data-rank="true" data-marketcap="true" data-volume="true" data-statsticker="true" 
-            data-stats="USD"></div>
-
-            <div class="coinmarketcap-currency-widget" data-currencyid="1839" data-base="USD" data-secondary="" 
-            data-ticker="true" data-rank="true" data-marketcap="true" data-volume="true" data-statsticker="true" 
-            data-stats="USD"></div>
-
-            <div class="coinmarketcap-currency-widget" data-currencyid="3077" data-base="USD" data-secondary=""
-             data-ticker="true" data-rank="true" data-marketcap="true" data-volume="true" data-statsticker="true" 
-             data-stats="USD"></div>
-        </div>
-    </section>
-
-    <section>
-        <div class="contenedor__desplegable" data-aos="flip-up">
-            <form action="">
-                <div class="desplegable__selectbox">
-                    <div class="desplegable__select" id="select">
-                        <div class="contenido__select">
-                            <h1 class="titulo__select">Tips Cryptos</h1>
-                            <p class="descripcion__select">Pequeños tips que quizas no conocias del mundo crypto..</p>
-                        </div>
-                        <i class="desplegable__icono fas fa-angle-down"></i>
-                    </div>
-
-                    <!-- opciones -->
-
-                    <div class="desplegable__opciones" id="opciones">
-                        <a href="../burger website - copia/index.html" class="desplegable__enlaces">
-                            <div class="contenido__desplegable-opcion">
-                                <img src="./img/bitcoin-removebg-preview.png" alt="Bitcoin">
-                                <div class="opciones__texto">
-                                    <h2 class="titulo__select">Bitcoin</h2>
-                                    <p class="descripcion__select">creado por <b>Satoshi Nakamoto</b> En 2009.. <b> Que
-                                            es Bitcoin.?</b> - Bitcoin es una criptomoneda que puede utilizarse para
-                                        comprar cualquier bien o servicio en los lugares que sea aceptado. Es una moneda
-                                        digital libre y descentralizada que permite las transacciones sin necesidades de
-                                        intermediaros.</p>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="" class="desplegable__enlaces">
-                            <div class="contenido__desplegable-opcion">
-                                <img src="./img/Dogecoin-removebg-preview.png" alt="Bitcoin">
-                                <div class="opciones__texto">
-                                    <h2 class="titulo__select">Educacion NFT</h2>
-                                    <p class="descripcion__select">Lorem ipsum dolor sit.</p>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="" class="desplegable__enlaces">
-                            <div class="contenido__desplegable-opcion">
-                                <img src="./img/eyhereum-removebg-preview.png" alt="Bitcoin">
-                                <div class="opciones__texto">
-                                    <h2 class="titulo__select">Educacion NFT</h2>
-                                    <p class="descripcion__select">Lorem ipsum dolor sit.</p>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="" class="desplegable__enlaces">
-                            <div class="contenido__desplegable-opcion">
-                                <img src="./img/litecoin-removebg-preview.png" alt="Bitcoin">
-                                <div class="opciones__texto">
-                                    <h2 class="titulo__select">Educacion NFT</h2>
-                                    <p class="descripcion__select">Lorem ipsum dolor sit.</p>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="" class="desplegable__enlaces">
-                            <div class="contenido__desplegable-opcion">
-                                <img src="./img/tron-removebg-preview.png" alt="Bitcoin">
-                                <div class="opciones__texto">
-                                    <h2 class="titulo__select">Educacion NFT</h2>
-                                    <p class="descripcion__select">Lorem ipsum dolor sit.</p>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="" class="desplegable__enlaces">
-                            <div class="contenido__desplegable-opcion">
-                                <img src="./img/CryptoCode-removebg-preview.png" alt="Bitcoin">
-                                <div class="opciones__texto">
-                                    <h2 class="titulo__select">Educacion NFT</h2>
-                                    <p class="descripcion__select">Lorem ipsum dolor sit.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+            <div class="desplegable__opciones" id="opciones">
+              <a
+                href="../burger website - copia/index.html"
+                class="desplegable__enlaces"
+              >
+                <div class="contenido__desplegable-opcion">
+                  <img src="./img/bitcoin-removebg-preview.png" alt="Bitcoin" />
+                  <div class="opciones__texto">
+                    <h2 class="titulo__select">Bitcoin</h2>
+                    <p class="descripcion__select">
+                      creado por <b>Satoshi Nakamoto</b> En 2009..
+                      <b> Que es Bitcoin.?</b> - Bitcoin es una criptomoneda que
+                      puede utilizarse para comprar cualquier bien o servicio en
+                      los lugares que sea aceptado. Es una moneda digital libre
+                      y descentralizada que permite las transacciones sin
+                      necesidades de intermediaros.
+                    </p>
+                  </div>
                 </div>
+              </a>
 
-                <input type="hidden" name="seccion" id="inputselect" value="">
-            </form>
-        </div>
+              <a href="" class="desplegable__enlaces">
+                <div class="contenido__desplegable-opcion">
+                  <img
+                    src="./img/Dogecoin-removebg-preview.png"
+                    alt="Bitcoin"
+                  />
+                  <div class="opciones__texto">
+                    <h2 class="titulo__select">Educacion NFT</h2>
+                    <p class="descripcion__select">Lorem ipsum dolor sit.</p>
+                  </div>
+                </div>
+              </a>
+
+              <a href="" class="desplegable__enlaces">
+                <div class="contenido__desplegable-opcion">
+                  <img
+                    src="./img/eyhereum-removebg-preview.png"
+                    alt="Bitcoin"
+                  />
+                  <div class="opciones__texto">
+                    <h2 class="titulo__select">Educacion NFT</h2>
+                    <p class="descripcion__select">Lorem ipsum dolor sit.</p>
+                  </div>
+                </div>
+              </a>
+
+              <a href="" class="desplegable__enlaces">
+                <div class="contenido__desplegable-opcion">
+                  <img
+                    src="./img/litecoin-removebg-preview.png"
+                    alt="Bitcoin"
+                  />
+                  <div class="opciones__texto">
+                    <h2 class="titulo__select">Educacion NFT</h2>
+                    <p class="descripcion__select">Lorem ipsum dolor sit.</p>
+                  </div>
+                </div>
+              </a>
+
+              <a href="" class="desplegable__enlaces">
+                <div class="contenido__desplegable-opcion">
+                  <img src="./img/tron-removebg-preview.png" alt="Bitcoin" />
+                  <div class="opciones__texto">
+                    <h2 class="titulo__select">Educacion NFT</h2>
+                    <p class="descripcion__select">Lorem ipsum dolor sit.</p>
+                  </div>
+                </div>
+              </a>
+
+              <a href="" class="desplegable__enlaces">
+                <div class="contenido__desplegable-opcion">
+                  <img
+                    src="./img/CryptoCode-removebg-preview.png"
+                    alt="Bitcoin"
+                  />
+                  <div class="opciones__texto">
+                    <h2 class="titulo__select">Educacion NFT</h2>
+                    <p class="descripcion__select">Lorem ipsum dolor sit.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <input type="hidden" name="seccion" id="inputselect" value="" />
+        </form>
+      </div>
     </section>
 
     <!-- sistema de filtrado por categoria -->
 
     <section>
+      <div class="contenedor__filtrado">
+        <input
+          type="radio"
+          id="TODOS"
+          name="categories"
+          value="TODOS"
+          checked
+        />
+        <input type="radio" id="BITCOIN" name="categories" value="BITCOIN" />
+        <input type="radio" id="ETHEREUM" name="categories" value="ETHEREUM" />
+        <input type="radio" id="TRON" name="categories" value="TRON" />
+        <input type="radio" id="DOGECOIN" name="categories" value="DOGECOIN" />
+        <input type="radio" id="LITECOIN" name="categories" value="LITECOIN" />
 
-        <div class="contenedor__filtrado">
-
-
-            <input type="radio" id="TODOS" name="categories" value="TODOS" checked>
-            <input type="radio" id="BITCOIN" name="categories" value="BITCOIN">
-            <input type="radio" id="ETHEREUM" name="categories" value="ETHEREUM">
-            <input type="radio" id="TRON" name="categories" value="TRON">
-            <input type="radio" id="DOGECOIN" name="categories" value="DOGECOIN">
-            <input type="radio" id="LITECOIN" name="categories" value="LITECOIN">
-
-            <div class="container__categorias" data-aos="flip-down">
-                <label for="TODOS">TODOS</label>
-                <label for="BITCOIN">BITCOIN</label>
-                <label for="ETHEREUM">ETHEREUM</label>
-                <label for="TRON">TRON</label>
-                <label for="DOGECOIN">DOGECOIN</label>
-                <label for="LITECOIN">LITECOIN</label>
-            </div>
-
-            <div class="sistema__filtrado" data-aos="zoom-in">
-                <div class="filtrado-elementos" data-category="BITCOIN">
-                    <div class="filtrado-img">
-                        <img src="./img/bitcoin-removebg-preview.png" alt="Bitcoin">
-                    </div>
-                    <h2>Lorem ipsum dolor sit amet.</h2>
-                    <span>Lorem ipsum dolor sit.</span>
-                    <ul class="ctn-filtro">
-                        <li>BTC</li>
-                        <li>ETH</li>
-                    </ul>
-                    <a href="#"><button>Leer Más</button></a>
-                </div>
-
-                <div class="filtrado-elementos" data-category="DOGECOIN">
-                    <div class="filtrado-img">
-                        <img src="./img/Dogecoin-removebg-preview.png" alt="Bitcoin">
-                    </div>
-                    <h2>Lorem ipsum dolor sit amet.</h2>
-                    <span>Lorem ipsum dolor sit.</span>
-                    <ul class="ctn-filtro">
-                        <li>BTC</li>
-                        <li>ETH</li>
-                    </ul>
-                    <a href="#"><button>Leer Más</button></a>
-                </div>
-
-                <div class="filtrado-elementos" data-category="ETHEREUM">
-                    <div class="filtrado-img">
-                        <img src="./img/eyhereum-removebg-preview.png" alt="Bitcoin">
-                    </div>
-                    <h2>Lorem ipsum dolor sit amet.</h2>
-                    <span>Lorem ipsum dolor sit.</span>
-                    <ul class="ctn-filtro">
-                        <li>BTC</li>
-                        <li>ETH</li>
-                    </ul>
-                    <a href="#"><button>Leer Más</button></a>
-                </div>
-
-                <div class="filtrado-elementos" data-category="LITECOIN">
-                    <div class="filtrado-img">
-                        <img src="./img/litecoin-removebg-preview.png" alt="Bitcoin">
-                    </div>
-                    <h2>Lorem ipsum dolor sit amet.</h2>
-                    <span>Lorem ipsum dolor sit.</span>
-                    <ul class="ctn-filtro">
-                        <li>BTC</li>
-                        <li>ETH</li>
-                    </ul>
-                    <a href="#"><button>Leer Más</button></a>
-                </div>
-
-                <div class="filtrado-elementos" data-category="BITCOIN">
-                    <div class="filtrado-img">
-                        <img src="./img/bitcoin-removebg-preview.png" alt="Bitcoin">
-                    </div>
-                    <h2>Lorem ipsum dolor sit amet.</h2>
-                    <span>Lorem ipsum dolor sit.</span>
-                    <ul class="ctn-filtro">
-                        <li>BTC</li>
-                        <li>ETH</li>
-                    </ul>
-                    <a href="#"><button>Leer Más</button></a>
-                </div>
-
-                <div class="filtrado-elementos" data-category="ETHEREUM">
-                    <div class="filtrado-img">
-                        <img src="./img/icono-CryptoCode.png" alt="Bitcoin">
-                    </div>
-                    <h2>Lorem ipsum dolor sit amet.</h2>
-                    <span>Lorem ipsum dolor sit.</span>
-                    <ul class="ctn-filtro">
-                        <li>BTC</li>
-                        <li>ETH</li>
-                    </ul>
-                    <a href="#"><button>Leer Más</button></a>
-                </div>
-
-                <div class="filtrado-elementos" data-category="TRON">
-                    <div class="filtrado-img">
-                        <img src="./img/tron-removebg-preview.png" alt="Bitcoin">
-                    </div>
-                    <h2>Lorem ipsum dolor sit amet.</h2>
-                    <span>Lorem ipsum dolor sit.</span>
-                    <ul class="ctn-filtro">
-                        <li>BTC</li>
-                        <li>ETH</li>
-                    </ul>
-                    <a href="#"><button>Leer Más</button></a>
-                </div>
-
-                <div class="filtrado-elementos" data-category="BITCOIN">
-                    <div class="filtrado-img">
-                        <img src="./img/bitcoin-removebg-preview.png" alt="Bitcoin">
-                    </div>
-                    <h2>Lorem ipsum dolor sit amet.</h2>
-                    <span>Lorem ipsum dolor sit.</span>
-                    <ul class="ctn-filtro">
-                        <li>BTC</li>
-                        <li>ETH</li>
-                    </ul>
-                    <a href="#"><button>Leer Más</button></a>
-                </div>
-            </div>
-
+        <div class="container__categorias" data-aos="flip-down">
+          <label for="TODOS">TODOS</label>
+          <label for="BITCOIN">BITCOIN</label>
+          <label for="ETHEREUM">ETHEREUM</label>
+          <label for="TRON">TRON</label>
+          <label for="DOGECOIN">DOGECOIN</label>
+          <label for="LITECOIN">LITECOIN</label>
         </div>
 
+        <div class="sistema__filtrado" data-aos="zoom-in">
+          <div class="filtrado-elementos" data-category="BITCOIN">
+            <div class="filtrado-img">
+              <img src="./img/bitcoin-removebg-preview.png" alt="Bitcoin" />
+            </div>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <span>Lorem ipsum dolor sit.</span>
+            <ul class="ctn-filtro">
+              <li>BTC</li>
+              <li>ETH</li>
+            </ul>
+            <a href="#"><button>Leer Más</button></a>
+          </div>
+
+          <div class="filtrado-elementos" data-category="DOGECOIN">
+            <div class="filtrado-img">
+              <img src="./img/Dogecoin-removebg-preview.png" alt="Bitcoin" />
+            </div>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <span>Lorem ipsum dolor sit.</span>
+            <ul class="ctn-filtro">
+              <li>BTC</li>
+              <li>ETH</li>
+            </ul>
+            <a href="#"><button>Leer Más</button></a>
+          </div>
+
+          <div class="filtrado-elementos" data-category="ETHEREUM">
+            <div class="filtrado-img">
+              <img src="./img/eyhereum-removebg-preview.png" alt="Bitcoin" />
+            </div>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <span>Lorem ipsum dolor sit.</span>
+            <ul class="ctn-filtro">
+              <li>BTC</li>
+              <li>ETH</li>
+            </ul>
+            <a href="#"><button>Leer Más</button></a>
+          </div>
+
+          <div class="filtrado-elementos" data-category="LITECOIN">
+            <div class="filtrado-img">
+              <img src="./img/litecoin-removebg-preview.png" alt="Bitcoin" />
+            </div>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <span>Lorem ipsum dolor sit.</span>
+            <ul class="ctn-filtro">
+              <li>BTC</li>
+              <li>ETH</li>
+            </ul>
+            <a href="#"><button>Leer Más</button></a>
+          </div>
+
+          <div class="filtrado-elementos" data-category="BITCOIN">
+            <div class="filtrado-img">
+              <img src="./img/bitcoin-removebg-preview.png" alt="Bitcoin" />
+            </div>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <span>Lorem ipsum dolor sit.</span>
+            <ul class="ctn-filtro">
+              <li>BTC</li>
+              <li>ETH</li>
+            </ul>
+            <a href="#"><button>Leer Más</button></a>
+          </div>
+
+          <div class="filtrado-elementos" data-category="ETHEREUM">
+            <div class="filtrado-img">
+              <img src="./img/icono-CryptoCode.png" alt="Bitcoin" />
+            </div>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <span>Lorem ipsum dolor sit.</span>
+            <ul class="ctn-filtro">
+              <li>BTC</li>
+              <li>ETH</li>
+            </ul>
+            <a href="#"><button>Leer Más</button></a>
+          </div>
+
+          <div class="filtrado-elementos" data-category="TRON">
+            <div class="filtrado-img">
+              <img src="./img/tron-removebg-preview.png" alt="Bitcoin" />
+            </div>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <span>Lorem ipsum dolor sit.</span>
+            <ul class="ctn-filtro">
+              <li>BTC</li>
+              <li>ETH</li>
+            </ul>
+            <a href="#"><button>Leer Más</button></a>
+          </div>
+
+          <div class="filtrado-elementos" data-category="BITCOIN">
+            <div class="filtrado-img">
+              <img src="./img/bitcoin-removebg-preview.png" alt="Bitcoin" />
+            </div>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <span>Lorem ipsum dolor sit.</span>
+            <ul class="ctn-filtro">
+              <li>BTC</li>
+              <li>ETH</li>
+            </ul>
+            <a href="#"><button>Leer Más</button></a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- fin de la seccion de filtrado -->
@@ -437,237 +557,306 @@
     <!-- inicio de distribucion del token -->
 
     <section>
+      <h1
+        class="titulo__distribucion"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+        data-section="profile"
+        data-value="rol"
+      >
+        Implementacion del token y distribucion del mismo..!!
+      </h1>
 
-        <h1 class="titulo__distribucion" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
-            data-section="profile" data-value="rol">
-            Implementacion del token y distribucion del mismo..!!</h1>
-
-        <div class="contenedor__distribucion" data-aos="flip-left" data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000">
-
-            <div class="container-grafico"></div>
-            <div class="container-leyenda">
-                <span class="leyenda-all">
-                    <span class="color__facebook"></span>
-                    <p class="social social1" data-section="categorias" data-value="social1">60% Recompensas</p>
-                </span>
-                <span class="leyenda-all">
-                    <span class="color__twitter"></span>
-                    <p class="social social2" data-section="categorias" data-value="social2">15% Team</p>
-                </span>
-                <span class="leyenda-all">
-                    <span class="color__instagram"></span>
-                    <p class="social social3" data-section="categorias" data-value="social3">15% Airdrops y Sorteos</p>
-                </span>
-                <span class="leyenda-all">
-                    <span class="color__pinterest"></span>
-                    <p class="social social4" data-section="categorias" data-value="social4">10% Liquidez</p>
-                </span>
-                <p class="total social5" data-section="categorias" data-value="social5">Total: 400.000.000 token`s</p>
-            </div>
-
-
+      <div
+        class="contenedor__distribucion"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+      >
+        <div class="container-grafico"></div>
+        <div class="container-leyenda">
+          <span class="leyenda-all">
+            <span class="color__facebook"></span>
+            <p
+              class="social social1"
+              data-section="categorias"
+              data-value="social1"
+            >
+              60% Recompensas
+            </p>
+          </span>
+          <span class="leyenda-all">
+            <span class="color__twitter"></span>
+            <p
+              class="social social2"
+              data-section="categorias"
+              data-value="social2"
+            >
+              15% Team
+            </p>
+          </span>
+          <span class="leyenda-all">
+            <span class="color__instagram"></span>
+            <p
+              class="social social3"
+              data-section="categorias"
+              data-value="social3"
+            >
+              15% Airdrops y Sorteos
+            </p>
+          </span>
+          <span class="leyenda-all">
+            <span class="color__pinterest"></span>
+            <p
+              class="social social4"
+              data-section="categorias"
+              data-value="social4"
+            >
+              10% Liquidez
+            </p>
+          </span>
+          <p
+            class="total social5"
+            data-section="categorias"
+            data-value="social5"
+          >
+            Total: 400.000.000 token`s
+          </p>
         </div>
-
+      </div>
     </section>
-
 
     <!-- fin de la distribucion -->
 
     <!-- inicio de seccion desplazable -->
 
     <section id="slider__contenedor">
+      <div class="slider-container swiper" data-aos="zoom-in">
+        <div class="slider-content">
+          <div class="slider-carta swiper-wrapper">
+            <div class="carta swiper-slide">
+              <div class="img-carta">
+                <span class="overley"></span>
 
-        <div class="slider-container swiper" data-aos="zoom-in">
-            <div class="slider-content">
-                <div class="slider-carta swiper-wrapper">
-                    <div class="carta swiper-slide">
-                        <div class="img-carta">
-                            <span class="overley"></span>
-
-                            <div class="carta__img">
-                                <img src="./img/bitcoin-removebg-preview.png" alt="bitcoin" class="img">
-                            </div>
-                        </div>
-
-                        <div class="carta-texto">
-                            <h1 class="nombre">Bitcoin</h1>
-                            <p class="descripcion">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, veniam. Nam
-                                veritatis id architecto minus.
-                            </p>
-
-                            <button class="boton">Ver Más</button>
-                        </div>
-                    </div>
-
-                    <div class="carta swiper-slide">
-                        <div class="img-carta">
-                            <span class="overley"></span>
-
-                            <div class="carta__img">
-                                <img src="./img/Dogecoin-removebg-preview.png" alt="bitcoin" class="img">
-                            </div>
-                        </div>
-
-                        <div class="carta-texto">
-                            <h1 class="nombre">Bitcoin</h1>
-                            <p class="descripcion">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, veniam. Nam
-                                veritatis id architecto minus.
-                            </p>
-
-                            <button class="boton">Ver Más</button>
-                        </div>
-                    </div>
-
-                    <div class="carta swiper-slide">
-                        <div class="img-carta">
-                            <span class="overley"></span>
-
-                            <div class="carta__img">
-                                <img src="./img/eyhereum-removebg-preview.png" alt="bitcoin" class="img">
-                            </div>
-                        </div>
-
-                        <div class="carta-texto">
-                            <h1 class="nombre">Bitcoin</h1>
-                            <p class="descripcion">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, veniam. Nam
-                                veritatis id architecto minus.
-                            </p>
-
-                            <button class="boton">Ver Más</button>
-                        </div>
-                    </div>
-
-                    <div class="carta swiper-slide">
-                        <div class="img-carta">
-                            <span class="overley"></span>
-
-                            <div class="carta__img">
-                                <img src="./img/litecoin-removebg-preview.png" alt="bitcoin" class="img">
-                            </div>
-                        </div>
-
-                        <div class="carta-texto">
-                            <h1 class="nombre">Bitcoin</h1>
-                            <p class="descripcion">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, veniam. Nam
-                                veritatis id architecto minus.
-                            </p>
-
-                            <button class="boton">Ver Más</button>
-                        </div>
-                    </div>
-
-                    <div class="carta swiper-slide">
-                        <div class="img-carta">
-                            <span class="overley"></span>
-
-                            <div class="carta__img">
-                                <img src="./img/tron-removebg-preview.png" alt="bitcoin" class="img">
-                            </div>
-                        </div>
-
-                        <div class="carta-texto">
-                            <h1 class="nombre">Bitcoin</h1>
-                            <p class="descripcion">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, veniam. Nam
-                                veritatis id architecto minus.
-                            </p>
-
-                            <button class="boton">Ver Más</button>
-                        </div>
-                    </div>
-
-                    <div class="carta swiper-slide">
-                        <div class="img-carta">
-                            <span class="overley"></span>
-
-                            <div class="carta__img">
-                                <img src="./img/bitcoin-removebg-preview.png" alt="bitcoin" class="img">
-                            </div>
-                        </div>
-
-                        <div class="carta-texto">
-                            <h1 class="nombre">Bitcoin</h1>
-                            <p class="descripcion">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, veniam. Nam
-                                veritatis id architecto minus.
-                            </p>
-
-                            <button class="boton">Ver Más</button>
-                        </div>
-                    </div>
-
-                    <div class="carta swiper-slide">
-                        <div class="img-carta">
-                            <span class="overley"></span>
-
-                            <div class="carta__img">
-                                <img src="./img/eyhereum-removebg-preview.png" alt="bitcoin" class="img">
-                            </div>
-                        </div>
-
-                        <div class="carta-texto">
-                            <h1 class="nombre">Bitcoin</h1>
-                            <p class="descripcion">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, veniam. Nam
-                                veritatis id architecto minus.
-                            </p>
-
-                            <button class="boton">Ver Más</button>
-                        </div>
-                    </div>
-
-                    <div class="carta swiper-slide">
-                        <div class="img-carta">
-                            <span class="overley"></span>
-
-                            <div class="carta__img">
-                                <img src="./img/Dogecoin-removebg-preview.png" alt="bitcoin" class="img">
-                            </div>
-                        </div>
-
-                        <div class="carta-texto">
-                            <h1 class="nombre">Bitcoin</h1>
-                            <p class="descripcion">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, veniam. Nam
-                                veritatis id architecto minus.
-                            </p>
-
-                            <button class="boton">Ver Más</button>
-                        </div>
-                    </div>
-
-                    <div class="carta swiper-slide">
-                        <div class="img-carta">
-                            <span class="overley"></span>
-
-                            <div class="carta__img">
-                                <img src="./img/tron-removebg-preview.png" alt="bitcoin" class="img">
-                            </div>
-                        </div>
-
-                        <div class="carta-texto">
-                            <h1 class="nombre">Bitcoin</h1>
-                            <p class="descripcion">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, veniam. Nam
-                                veritatis id architecto minus.
-                            </p>
-
-                            <button class="boton">Ver Más</button>
-                        </div>
-                    </div>
+                <div class="carta__img">
+                  <img
+                    src="./img/bitcoin-removebg-preview.png"
+                    alt="bitcoin"
+                    class="img"
+                  />
                 </div>
+              </div>
+
+              <div class="carta-texto">
+                <h1 class="nombre">Bitcoin</h1>
+                <p class="descripcion">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Provident, veniam. Nam veritatis id architecto minus.
+                </p>
+
+                <button class="boton">Ver Más</button>
+              </div>
             </div>
 
-            <div class="swiper-button-next slider-navBtn"></div>
-            <div class="swiper-button-prev slider-navBtn"></div>
-            <div class="swiper-pagination"></div>
+            <div class="carta swiper-slide">
+              <div class="img-carta">
+                <span class="overley"></span>
+
+                <div class="carta__img">
+                  <img
+                    src="./img/Dogecoin-removebg-preview.png"
+                    alt="bitcoin"
+                    class="img"
+                  />
+                </div>
+              </div>
+
+              <div class="carta-texto">
+                <h1 class="nombre">Bitcoin</h1>
+                <p class="descripcion">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Provident, veniam. Nam veritatis id architecto minus.
+                </p>
+
+                <button class="boton">Ver Más</button>
+              </div>
+            </div>
+
+            <div class="carta swiper-slide">
+              <div class="img-carta">
+                <span class="overley"></span>
+
+                <div class="carta__img">
+                  <img
+                    src="./img/eyhereum-removebg-preview.png"
+                    alt="bitcoin"
+                    class="img"
+                  />
+                </div>
+              </div>
+
+              <div class="carta-texto">
+                <h1 class="nombre">Bitcoin</h1>
+                <p class="descripcion">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Provident, veniam. Nam veritatis id architecto minus.
+                </p>
+
+                <button class="boton">Ver Más</button>
+              </div>
+            </div>
+
+            <div class="carta swiper-slide">
+              <div class="img-carta">
+                <span class="overley"></span>
+
+                <div class="carta__img">
+                  <img
+                    src="./img/litecoin-removebg-preview.png"
+                    alt="bitcoin"
+                    class="img"
+                  />
+                </div>
+              </div>
+
+              <div class="carta-texto">
+                <h1 class="nombre">Bitcoin</h1>
+                <p class="descripcion">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Provident, veniam. Nam veritatis id architecto minus.
+                </p>
+
+                <button class="boton">Ver Más</button>
+              </div>
+            </div>
+
+            <div class="carta swiper-slide">
+              <div class="img-carta">
+                <span class="overley"></span>
+
+                <div class="carta__img">
+                  <img
+                    src="./img/tron-removebg-preview.png"
+                    alt="bitcoin"
+                    class="img"
+                  />
+                </div>
+              </div>
+
+              <div class="carta-texto">
+                <h1 class="nombre">Bitcoin</h1>
+                <p class="descripcion">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Provident, veniam. Nam veritatis id architecto minus.
+                </p>
+
+                <button class="boton">Ver Más</button>
+              </div>
+            </div>
+
+            <div class="carta swiper-slide">
+              <div class="img-carta">
+                <span class="overley"></span>
+
+                <div class="carta__img">
+                  <img
+                    src="./img/bitcoin-removebg-preview.png"
+                    alt="bitcoin"
+                    class="img"
+                  />
+                </div>
+              </div>
+
+              <div class="carta-texto">
+                <h1 class="nombre">Bitcoin</h1>
+                <p class="descripcion">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Provident, veniam. Nam veritatis id architecto minus.
+                </p>
+
+                <button class="boton">Ver Más</button>
+              </div>
+            </div>
+
+            <div class="carta swiper-slide">
+              <div class="img-carta">
+                <span class="overley"></span>
+
+                <div class="carta__img">
+                  <img
+                    src="./img/eyhereum-removebg-preview.png"
+                    alt="bitcoin"
+                    class="img"
+                  />
+                </div>
+              </div>
+
+              <div class="carta-texto">
+                <h1 class="nombre">Bitcoin</h1>
+                <p class="descripcion">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Provident, veniam. Nam veritatis id architecto minus.
+                </p>
+
+                <button class="boton">Ver Más</button>
+              </div>
+            </div>
+
+            <div class="carta swiper-slide">
+              <div class="img-carta">
+                <span class="overley"></span>
+
+                <div class="carta__img">
+                  <img
+                    src="./img/Dogecoin-removebg-preview.png"
+                    alt="bitcoin"
+                    class="img"
+                  />
+                </div>
+              </div>
+
+              <div class="carta-texto">
+                <h1 class="nombre">Bitcoin</h1>
+                <p class="descripcion">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Provident, veniam. Nam veritatis id architecto minus.
+                </p>
+
+                <button class="boton">Ver Más</button>
+              </div>
+            </div>
+
+            <div class="carta swiper-slide">
+              <div class="img-carta">
+                <span class="overley"></span>
+
+                <div class="carta__img">
+                  <img
+                    src="./img/tron-removebg-preview.png"
+                    alt="bitcoin"
+                    class="img"
+                  />
+                </div>
+              </div>
+
+              <div class="carta-texto">
+                <h1 class="nombre">Bitcoin</h1>
+                <p class="descripcion">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Provident, veniam. Nam veritatis id architecto minus.
+                </p>
+
+                <button class="boton">Ver Más</button>
+              </div>
+            </div>
+          </div>
         </div>
 
+        <div class="swiper-button-next slider-navBtn"></div>
+        <div class="swiper-button-prev slider-navBtn"></div>
+        <div class="swiper-pagination"></div>
+      </div>
     </section>
 
     <!-- fin seccion desplazable -->
@@ -675,100 +864,151 @@
     <!-- inicio seccion preguntas freceuntes -->
 
     <section>
+      <div class="primera-seccion__contenedor" data-aos="fade-left">
+        <h2
+          class="contenedor__titulo"
+          data-section="preguntasF"
+          data-value="contenedor__titulo"
+        >
+          Preguntas Frecuentes..?
+        </h2>
+        <div class="acordion">
+          <div class="acordion__contenedor">
+            <header>
+              <span
+                class="titulo__acordion titulo1"
+                data-section="preguntasF"
+                data-value="titulo1"
+                >Que Es Web3 CryptoCode..?</span
+              >
+              <i class="fas fa-plus icono__acordion"></i>
+            </header>
 
-        <div class="primera-seccion__contenedor" data-aos="fade-left">
-            <h2 class="contenedor__titulo" data-section="preguntasF" data-value="contenedor__titulo"> Preguntas
-                Frecuentes..?</h2>
-            <div class="acordion">
-                <div class="acordion__contenedor">
-                    <header>
-                        <span class="titulo__acordion titulo1" data-section="preguntasF" data-value="titulo1">Que Es
-                            Web3 CryptoCode..?</span>
-                        <i class="fas fa-plus icono__acordion"></i>
-                    </header>
+            <p
+              class="descripcion__acordion descripcion1"
+              data-section="descripcionesF"
+              data-value="descripcion1"
+            >
+              Web3 CryptoCode, es una plataforma diseñada para el aprendizase
+              sobre las nuevas tendencias criptograficas, el nuevo hambito
+              digital y la educacion crypto para su entera adopcion..
+            </p>
+          </div>
 
-                    <p class="descripcion__acordion descripcion1" data-section="descripcionesF"
-                        data-value="descripcion1">
-                        Web3 CryptoCode, es una plataforma diseñada para el aprendizase sobre las nuevas tendencias
-                        criptograficas, el nuevo hambito digital y la educacion crypto para su entera adopcion..
-                    </p>
-                </div>
+          <div class="acordion__contenedor">
+            <header>
+              <span
+                class="titulo__acordion titulo2"
+                data-section="preguntasF"
+                data-value="titulo2"
+                >como puedo comenzar a aprender..?</span
+              >
+              <i class="fas fa-plus icono__acordion"></i>
+            </header>
 
-                <div class="acordion__contenedor">
-                    <header>
-                        <span class="titulo__acordion titulo2" data-section="preguntasF" data-value="titulo2">como puedo
-                            comenzar a aprender..?</span>
-                        <i class="fas fa-plus icono__acordion"></i>
-                    </header>
+            <p
+              class="descripcion__acordion descripcion2"
+              data-section="descripcionesF"
+              data-value="descripcion2"
+            >
+              Tendremos Diferentes Secciones, Donde Podrar Ir Aprendiendo a
+              Medida Que Vallas Avanzando.
+            </p>
+          </div>
 
-                    <p class="descripcion__acordion descripcion2" data-section="descripcionesF"
-                        data-value="descripcion2">
-                        Tendremos Diferentes Secciones, Donde Podrar Ir Aprendiendo a Medida Que Vallas Avanzando.
-                    </p>
-                </div>
+          <div class="acordion__contenedor">
+            <header>
+              <span
+                class="titulo__acordion titulo3"
+                data-section="preguntasF"
+                data-value="titulo3"
+                >que son las criptomonedas..?</span
+              >
+              <i class="fas fa-plus icono__acordion"></i>
+            </header>
 
-                <div class="acordion__contenedor">
-                    <header>
-                        <span class="titulo__acordion titulo3" data-section="preguntasF" data-value="titulo3">que son
-                            las criptomonedas..?</span>
-                        <i class="fas fa-plus icono__acordion"></i>
-                    </header>
+            <p
+              class="descripcion__acordion descripcion3"
+              data-section="descripcionesF"
+              data-value="descripcion3"
+            >
+              Una criptomoneda, criptodivisa o criptoactivo es un medio digital
+              de intercambio que utiliza criptografía fuerte para asegurar las
+              transacciones, controlar la creación de unidades adicionales y
+              verificar la transferencia de activos usando tecnologías de
+              registro distribuido.
+            </p>
+          </div>
 
-                    <p class="descripcion__acordion descripcion3" data-section="descripcionesF"
-                        data-value="descripcion3">
-                        Una criptomoneda, criptodivisa o criptoactivo es un medio digital de intercambio que utiliza
-                        criptografía fuerte para asegurar las transacciones, controlar la creación de unidades
-                        adicionales y verificar la transferencia de activos usando tecnologías de registro distribuido.
-                    </p>
-                </div>
+          <div class="acordion__contenedor">
+            <header>
+              <span
+                class="titulo__acordion titulo4"
+                data-section="preguntasF"
+                data-value="titulo4"
+                >porque tienen un roadmap..?</span
+              >
+              <i class="fas fa-plus icono__acordion"></i>
+            </header>
 
-                <div class="acordion__contenedor">
-                    <header>
-                        <span class="titulo__acordion titulo4" data-section="preguntasF" data-value="titulo4">porque
-                            tienen un roadmap..?</span>
-                        <i class="fas fa-plus icono__acordion"></i>
-                    </header>
+            <p
+              class="descripcion__acordion descripcion4"
+              data-section="descripcionesF"
+              data-value="descripcion4"
+            >
+              en nuestro roadmap podras encontrar toda la hoja de ruta que
+              tendremos de educacion y futuros proyectos junto a la
+              comunidad..!!
+            </p>
+          </div>
 
-                    <p class="descripcion__acordion descripcion4" data-section="descripcionesF"
-                        data-value="descripcion4">
-                        en nuestro roadmap podras encontrar toda la hoja de ruta que
-                        tendremos de educacion y futuros proyectos junto a la comunidad..!!
-                    </p>
-                </div>
+          <div class="acordion__contenedor">
+            <header>
+              <span
+                class="titulo__acordion titulo5"
+                data-section="preguntasF"
+                data-value="titulo5"
+                >que son los NFT..?</span
+              >
+              <i class="fas fa-plus icono__acordion"></i>
+            </header>
 
-                <div class="acordion__contenedor">
-                    <header>
-                        <span class="titulo__acordion titulo5" data-section="preguntasF" data-value="titulo5">que son
-                            los NFT..?</span>
-                        <i class="fas fa-plus icono__acordion"></i>
-                    </header>
+            <p
+              class="descripcion__acordion descripcion5"
+              data-section="descripcionesF"
+              data-value="descripcion5"
+            >
+              Un token NO fungible, o NFT por sus siglas en inglés, es un tipo
+              especial de token criptográfico que representa algo único. Los
+              tókenes no fungibles no son, por tanto, intercambiables de forma
+              idéntica.
+            </p>
+          </div>
 
-                    <p class="descripcion__acordion descripcion5" data-section="descripcionesF"
-                        data-value="descripcion5">
-                        Un token NO fungible, o NFT por sus siglas en inglés, es un tipo especial de token
-                        criptográfico que representa algo único. Los tókenes no fungibles no son, por tanto,
-                        intercambiables de forma idéntica.
-                    </p>
-                </div>
+          <div class="acordion__contenedor">
+            <header>
+              <span
+                class="titulo__acordion titulo6"
+                data-section="preguntasF"
+                data-value="titulo6"
+                >que es blockchain..?</span
+              >
+              <i class="fas fa-plus icono__acordion"></i>
+            </header>
 
-                <div class="acordion__contenedor">
-                    <header>
-                        <span class="titulo__acordion titulo6" data-section="preguntasF" data-value="titulo6">que es
-                            blockchain..?</span>
-                        <i class="fas fa-plus icono__acordion"></i>
-                    </header>
-
-                    <p class="descripcion__acordion descripcion6" data-section="descripcionesF"
-                        data-value="descripcion6">
-                        Se traduce como cadena de bloques. Básicamente, blockchain es de un
-                        conjunto de tecnologías que
-                        permiten llevar un registro seguro, descentralizado, sincronizado y distribuido de
-                        las
-                        operaciones digitales, sin necesidad de la intermediación de terceros.
-                    </p>
-                </div>
-            </div>
+            <p
+              class="descripcion__acordion descripcion6"
+              data-section="descripcionesF"
+              data-value="descripcion6"
+            >
+              Se traduce como cadena de bloques. Básicamente, blockchain es de
+              un conjunto de tecnologías que permiten llevar un registro seguro,
+              descentralizado, sincronizado y distribuido de las operaciones
+              digitales, sin necesidad de la intermediación de terceros.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- fin seccion preguntas freceuntes -->
@@ -776,134 +1016,210 @@
     <!-- inicio seccion Road-Map -->
 
     <section>
+      <div class="titulo__roadmap" data-aos="fade-right">
+        <h1>Roadmap CryptoCode</h1>
+      </div>
 
-        <div class="titulo__roadmap" data-aos="fade-right">
-            <h1>Roadmap CryptoCode</h1>
+      <div class="container__roadmap" data-aos="fade-right">
+        <div class="roadmap__evento">
+          <div class="descripcion__roadmap">
+            <p
+              class="texto-roadmap textoR-1"
+              data-section="roadmap"
+              data-value="textoR-1"
+            >
+              Creacion de la idea para la plataforma..
+            </p>
+          </div>
+          <h3
+            class="fecha--roadmap fechaR-1"
+            data-section="roadmap"
+            data-value="fechaR-1"
+          >
+            Q2 mayo 2022
+          </h3>
         </div>
 
-        <div class="container__roadmap" data-aos="fade-right">
-            <div class="roadmap__evento">
-                <div class="descripcion__roadmap">
-                    <p class="texto-roadmap textoR-1" data-section="roadmap" data-value="textoR-1">
-                        Creacion de la idea para la plataforma..
-                    </p>
-                </div>
-                <h3 class="fecha--roadmap fechaR-1" data-section="roadmap" data-value="fechaR-1">Q2 mayo 2022</h3>
-            </div>
-
-            <div class="roadmap__evento">
-                <div class="descripcion__roadmap">
-                    <p class="texto-roadmap textoR-2" data-section="roadmap" data-value="textoR-2">
-                        desarrolo de la pagina web - eh implementacion de publicidad para dicha plataforma..
-                    </p>
-                </div>
-                <h3 class="fecha--roadmap fechaR-2" data-section="roadmap" data-value="fechaR-2">Q3 septiembre 2022</h3>
-            </div>
-
-            <div class="roadmap__evento">
-                <div class="descripcion__roadmap">
-                    <p class="texto-roadmap textoR-3" data-section="roadmap" data-value="textoR-3">
-                        primer paso de publicacion educativa..
-                    </p>
-                </div>
-                <h3 class="fecha--roadmap fechaR-3" data-section="roadmap" data-value="fechaR-3">Q4 diciembre 2022</h3>
-            </div>
-
-            <div class="roadmap__evento">
-                <div class="descripcion__roadmap">
-                    <p class="texto-roadmap textoR-4" data-section="roadmap" data-value="textoR-4">
-                        videos educativos y futuras colaboraciones..
-                    </p>
-                </div>
-                <h3 class="fecha--roadmap fechaR-4" data-section="roadmap" data-value="fechaR-4">Q1 marzo 2023</h3>
-            </div>
-
-            <div class="roadmap__evento">
-                <div class="descripcion__roadmap">
-                    <p class="texto-roadmap textoR-5" data-section="roadmap" data-value="textoR-5">
-                        inicio del desarrollo NFT Para el proyecto...
-                    </p>
-                </div>
-                <h3 class="fecha--roadmap fechaR-5" data-section="roadmap" data-value="fechaR-5">Q2 junio 2023</h3>
-            </div>
-
-            <div class="roadmap__evento">
-                <div class="descripcion__roadmap">
-                    <p class="texto-roadmap textoR-6" data-section="roadmap" data-value="textoR-6">
-                        desarrollo de un simulador de mineria activa en la nube...
-                    </p>
-                </div>
-                <h3 class="fecha--roadmap fechaR-6" data-section="roadmap" data-value="fechaR-6">Q3 septiembre 2023</h3>
-            </div>
+        <div class="roadmap__evento">
+          <div class="descripcion__roadmap">
+            <p
+              class="texto-roadmap textoR-2"
+              data-section="roadmap"
+              data-value="textoR-2"
+            >
+              desarrolo de la pagina web - eh implementacion de publicidad para
+              dicha plataforma..
+            </p>
+          </div>
+          <h3
+            class="fecha--roadmap fechaR-2"
+            data-section="roadmap"
+            data-value="fechaR-2"
+          >
+            Q3 septiembre 2022
+          </h3>
         </div>
+
+        <div class="roadmap__evento">
+          <div class="descripcion__roadmap">
+            <p
+              class="texto-roadmap textoR-3"
+              data-section="roadmap"
+              data-value="textoR-3"
+            >
+              primer paso de publicacion educativa..
+            </p>
+          </div>
+          <h3
+            class="fecha--roadmap fechaR-3"
+            data-section="roadmap"
+            data-value="fechaR-3"
+          >
+            Q4 diciembre 2022
+          </h3>
+        </div>
+
+        <div class="roadmap__evento">
+          <div class="descripcion__roadmap">
+            <p
+              class="texto-roadmap textoR-4"
+              data-section="roadmap"
+              data-value="textoR-4"
+            >
+              videos educativos y futuras colaboraciones..
+            </p>
+          </div>
+          <h3
+            class="fecha--roadmap fechaR-4"
+            data-section="roadmap"
+            data-value="fechaR-4"
+          >
+            Q1 marzo 2023
+          </h3>
+        </div>
+
+        <div class="roadmap__evento">
+          <div class="descripcion__roadmap">
+            <p
+              class="texto-roadmap textoR-5"
+              data-section="roadmap"
+              data-value="textoR-5"
+            >
+              inicio del desarrollo NFT Para el proyecto...
+            </p>
+          </div>
+          <h3
+            class="fecha--roadmap fechaR-5"
+            data-section="roadmap"
+            data-value="fechaR-5"
+          >
+            Q2 junio 2023
+          </h3>
+        </div>
+
+        <div class="roadmap__evento">
+          <div class="descripcion__roadmap">
+            <p
+              class="texto-roadmap textoR-6"
+              data-section="roadmap"
+              data-value="textoR-6"
+            >
+              desarrollo de un simulador de mineria activa en la nube...
+            </p>
+          </div>
+          <h3
+            class="fecha--roadmap fechaR-6"
+            data-section="roadmap"
+            data-value="fechaR-6"
+          >
+            Q3 septiembre 2023
+          </h3>
+        </div>
+      </div>
     </section>
 
     <!-- fin seccion Road-Map -->
 
     <!-- seccion rollerCoin -->
 
-        <section class="rollerCoin rollerCoin_web">
-            <!--Start rollercoin.com code-->
-                <a href="https://rollercoin.com/?r=kpwr1ipw" target="_blank">
-                    <img loading="lazy" src="./img/w728h90.gif" alt="728h90"/>
-                </a>
-            <!--End rollercoin.com code-->
-        </section>
-        
+    <section class="rollerCoin rollerCoin_web">
+      <!--Start rollercoin.com code-->
+      <a href="https://rollercoin.com/?r=kpwr1ipw" target="_blank">
+        <img loading="lazy" src="./img/w728h90.gif" alt="728h90" />
+      </a>
+      <!--End rollercoin.com code-->
+    </section>
+
     <!-- fin rollercoin -->
 
     <!-- seccion rollerCoin -->
 
     <section class="rollerCoin rollerCoin_Movil">
-        <!--Start rollercoin.com code-->
-            <a href="https://rollercoin.com/?r=kpwr1ipw" target="_blank">
-                <img loading="lazy" src="./img/w320h50-movil.gif" alt="320h50"/>
-            </a>
-        <!--End rollercoin.com code-->
+      <!--Start rollercoin.com code-->
+      <a href="https://rollercoin.com/?r=kpwr1ipw" target="_blank">
+        <img loading="lazy" src="./img/w320h50-movil.gif" alt="320h50" />
+      </a>
+      <!--End rollercoin.com code-->
     </section>
-    
-    <!-- fin rollercoin -->
 
+    <!-- fin rollercoin -->
 
     <!--::::Pie de Pagina::::::-->
 
     <section class="pie-pagina">
-        <div class="grupo-1">
-            <div class="box">
-                <figure class="footer__figure">
-                    <a href="index.html">
-                        <img loading="lazy" class="footer__img" src="./img/CryptoCode-removebg-preview.png"
-                            alt="Logo de CryptoCode">
-                    </a>
-                </figure>
-            </div>
-            <div class="box">
-                <h2 class="footer__titulos">SOBRE NOSOTROS</h2>
-                <p class="footer__parrafos">Plataforma Creada Para El Conocimiento y La Educacion basada en BlockChain..
-                </p>
-                <p class="footer__parrafos">Falta Mucho Conocimiento En La Poblacion Mundial Para Lograr La Adopción
-                    Criptografica..</p>
-            </div>
-            <div class="box">
-                <h2 class="footer__titulos">SIGUENOS</h2>
-                <div class="red-social">
-                    <a href="https://twitter.com/EarnToEducate?t=GAuSF1PRJ5NLD0IIiNoiGQ&s=09"
-                        class="footer__enlaces-redes fab fa-twitter" target="_blank"></a>
-                    <a href="https://www.youtube.com/channel/UCjKeGXNcXmad9ufJaoBE-XQ"
-                        class="footer__enlaces-redes fab fa-youtube" target="_blank"></a>
-                    <a href="https://t.me/web3CryptoCode" class="footer__enlaces-redes fab fa-telegram-plane"
-                        target="_blank"></a>
-                </div>
-            </div>
+      <div class="grupo-1">
+        <div class="box">
+          <figure class="footer__figure">
+            <a href="index.html">
+              <img
+                loading="lazy"
+                class="footer__img"
+                src="./img/CryptoCode-removebg-preview.png"
+                alt="Logo de CryptoCode"
+              />
+            </a>
+          </figure>
         </div>
-        <div class="grupo-2">
-            <small class="footer__grupo-2">&copy; 2022 <b>CryptoCode</b> - Todos los Derechos Reservados.</small>
+        <div class="box">
+          <h2 class="footer__titulos">SOBRE NOSOTROS</h2>
+          <p class="footer__parrafos">
+            Plataforma Creada Para El Conocimiento y La Educacion basada en
+            BlockChain..
+          </p>
+          <p class="footer__parrafos">
+            Falta Mucho Conocimiento En La Poblacion Mundial Para Lograr La
+            Adopción Criptografica..
+          </p>
         </div>
+        <div class="box">
+          <h2 class="footer__titulos">SIGUENOS</h2>
+          <div class="red-social">
+            <a
+              href="https://twitter.com/EarnToEducate?t=GAuSF1PRJ5NLD0IIiNoiGQ&s=09"
+              class="footer__enlaces-redes fab fa-twitter"
+              target="_blank"
+            ></a>
+            <a
+              href="https://www.youtube.com/channel/UCjKeGXNcXmad9ufJaoBE-XQ"
+              class="footer__enlaces-redes fab fa-youtube"
+              target="_blank"
+            ></a>
+            <a
+              href="https://t.me/web3CryptoCode"
+              class="footer__enlaces-redes fab fa-telegram-plane"
+              target="_blank"
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="grupo-2">
+        <small class="footer__grupo-2"
+          >&copy; 2022 <b>CryptoCode</b> - Todos los Derechos Reservados.</small
+        >
+      </div>
     </section>
 
     <!-- fin seccion pie de pagina -->
-
-
 
     <!-- scripts por CDN -->
 
@@ -913,14 +1229,17 @@
     <!-- script de inicio AOS -->
 
     <script>
-        AOS.init({
-            duration: 1000,
-            once: true
-        });
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
     </script>
 
     <!-- == Scripts CoinMarketCap -->
-    <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
+    <script
+      type="text/javascript"
+      src="https://files.coinmarketcap.com/static/widget/currency.js"
+    ></script>
 
     <!-- scripts -->
     <script src="./js/app.js" defer></script>
@@ -932,6 +1251,5 @@
     <script src="./js/cambioIdiomaPc.js" defer></script>
     <script src="./js/cambioDeIdiomaMovil.js" defer></script>
     <script src="./js/scrollUp.js" defer></script>
-</body>
-
+  </body>
 </html>

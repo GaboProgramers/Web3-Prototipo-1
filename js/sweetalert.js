@@ -1,7 +1,6 @@
 /* navegacion interna */
 
-const body = document.querySelector("body"),
-      nav = document.querySelector(".lista-interna"),
+const nav = document.querySelector(".lista-interna"),
       sidebarOpen = document.querySelector(".desplegable"),
       siderbarClose = document.querySelector(".siderbarClose");
  
@@ -13,8 +12,7 @@ sidebarOpen.addEventListener("click" , () =>{
 
 body.addEventListener("click" , e =>{
     let clickedElm = e.target;
-
-    if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains(".sidebarClose")){
+    if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains(".conjunto-desplegable")){
         nav.classList.remove("active");
     }
 });
