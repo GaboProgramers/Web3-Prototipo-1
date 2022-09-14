@@ -9,12 +9,14 @@ navToggle.addEventListener('click', () => {
 });
 
 conjuntoDesplegable.addEventListener('click', e => {
+
   let clickedElm = e.target;
 
   if(!clickedElm.classList.contains('navToggle') && !clickedElm.classList.contains('.lista-interna')){
       listaInterna.classList.remove('active')
   }
 })
+
 
 /* swetAlert */
 

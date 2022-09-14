@@ -98,25 +98,6 @@ body {
     border: 1px solid var(--color-primario-header);
 }
 
-.dashboar .lista-interna i {
-    position: absolute;
-    font-size: 25px;
-    right: 15px;
-    border: 1px solid var(--color-enlaces-inicial);
-    border-radius: 50%;
-    cursor: pointer;
-    color: var(--color-enlaces-inicial);
-}
-
-.dashboar .lista-interna i.active {
-    display: none;
-}
-
-.dashboar .lista-interna i:hover {
-    color: var(--color-enlaces-hover);
-    border: 1px solid var(--color-enlaces-hover);
-}
-
 .dashboar .lista-interna.active {
     display: block;
 }
@@ -128,27 +109,35 @@ body {
     padding: 10px;
     width: 100%;
     text-align: center;
-    font-size: 25px;
+    /* font-size: 25px; */
     color: var(--color-enlaces-inicial);
     margin: 10px 0;
-    border-bottom: 1px solid var(--color-primario-header);
+    /* border-bottom: 1px solid var(--color-primario-header); */
     border-radius: 10px;
+}
+
+.lista-interna ul i {
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.lista-interna ul:nth-child(6) {
+    border: 2px solid var(--color-enlaces-hover);
 }
 
 .lista-interna ul a {
     color: var(--color-enlaces-inicial);
+    font-size: 25px;
+    width: 100%;
+    padding: inherit;
+    border-radius: 10px;
+    transition: all .1s ease-in-out;
 }
 
 .lista-interna ul a:hover {
     color: var(--color-texto-input);
-}
-
-.lista-interna ul:hover {
     background-color: var(--color-enlaces-hover);
-    opacity: 0.7;
     font-weight: bold;
-    color: var(--color-texto-input);
-    cursor: pointer;
 }
 
 .titulo {
