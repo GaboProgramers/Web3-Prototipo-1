@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/root.css" />
     <link rel="stylesheet" href="./css/navBar.css" />
     <link rel="stylesheet" href="./css/spiner.css" />
+    <link rel="stylesheet" href="./css/dashboard.css" />
 
     <!-- link externos -->
 
@@ -24,11 +25,13 @@
       href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <script src="https://kit.fontawesome.com/75eec5443c.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/75eec5443c.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body class="hidden" id="hidden">
-
     <div id="particles-js"></div>
 
     <!-- nuevo spiner -->
@@ -157,181 +160,24 @@
       </div>
     </nav>
 
-    <section>
-      <div class="dashboar" id="dashboar">
-        <div class="lista">
-          <ul>
-            <a href="./index.html">DashBoard</a>
-          </ul>
-          <ul>
-            <a href="./analisisG.html">Graficos</a>
-          </ul>
-        </div>
+    <section class="perfil">
+      <h1>Perfil</h1>
 
-        <div class="balance">
-          <div class="puntos-win">
-            <span>1000 Coin</span>
+      <section class="info-basic">
+        <h2>Basic Information</h2>
+
+        <div class="info">
+          <div class="info-user">
+            <p>UserName</p>
+            <input type="text" placeholder="CryptoCode" />
+          </div>
+          <div class="info-user">
+            <p>UserName</p>
+            <input type="text" placeholder="CryptoCode" />
           </div>
         </div>
-
-        <div class="conjunto-desplegable">
-          <div class="desplegable">
-            <i class="bx bx-menu navToggle"></i>
-          </div>
-
-          <div class="lista-interna">
-            <ul>
-              <a href="dashboard.html"><i class='bx bxs-user'></i>DashBoard</a>
-            </ul>
-            <ul>
-              <a href="#"><i class='bx bx-share-alt'></i>Referrals</a>
-            </ul>
-            <ul>
-              <a href="#"><i class='bx bx-wallet'></i>Wallet</a>
-            </ul>
-            <ul>
-              <a href="#"><i class='bx bx-money-withdraw' ></i>withdraw</a>
-            </ul>
-            <ul>
-              <a href="contacto.html"><i class='bx bxs-contact' ></i>Contact</a>
-            </ul>
-            <ul>
-              <a href="#"><i class='bx bx-log-out'></i>Logout</a>
-            </ul>
-          </div>
-        </div>
-      </div>
+      </section>
     </section>
-
-    <section>
-      <div class="titulo">
-        <p>Roll Game</p>
-      </div>
-    </section>
-
-    <div class="nota">
-      <p>
-        Note: Browser like Brave, Crypto Tab and others and also some extension
-        block some of our security features because of that our system may be
-        detect your activity as unusual or bot and you may be compromised your
-        account for permanently. Please disable any extension or script that
-        might be block javascript, cookie or any of our security features and
-        use Chrome browser while using our site.
-      </p>
-    </div>
-
-    <div class="seccion-doble">
-      <div class="seccion-primera">
-        <div class="Temporizador">
-          <div>
-            <p class="Titulo-reclamo">You Can Roll Every 1 Hours.</p>
-          </div>
-        </div>
-
-        <div class="Temporizador2">
-          <div>
-            <p>
-              Button timer: If button timer is stuck just click any where of the
-              page to work again.
-            </p>
-          </div>
-        </div>
-
-        <div class="publicidad">
-          <!--Start rollercoin.com code-->
-          <a href="https://rollercoin.com/?r=kpwr1ipw">
-            <img loading="lazy" src="./img/w200h200-pqueña.gif" alt="200h200" />
-          </a>
-          <!--End rollercoin.com code-->
-        </div>
-
-        <div class="porsentaje-reclamo">
-          <h4>Your Currently Roll Bonus is 2%.</h4>
-          <p>- You will get bonus randomly upto 2% per roll.</p>
-          <p>- All roll bonus will be autometically added on your account.</p>
-
-          <h4>Your Currently Loyalty Bonus is 1.75%.</h4>
-          <p>- Loyalty Bonus is based on user daily activity on roll game.</p>
-          <p>
-            - Be active Daily and claim at least one time on roll game to
-            increase Loyalty Bonus (Max 5%).
-          </p>
-        </div>
-
-        <div class="texto-mostrar hide" id="hideText">
-          <p></p>
-        </div>
-
-        <div class="reclamo">
-          <button class="btn" id="btn">Roll Now</button>
-        </div>
-      </div>
-
-      <div class="contenedor-tabla">
-        <div class="ads-payu">
-          <a href="https://www.coinpayu.com/?r=Grande2112">
-            <img
-              title="Join coinpayu to earn!"
-              alt="coinpayu"
-              src="https://www.coinpayu.com/static/earners_banner/468X60_es.gif"
-            />
-          </a>
-        </div>
-
-        <div class="tabla-de-reclamos">
-          <h4>Roll Game Rate</h4>
-        </div>
-
-        <div class="cart-body">
-          <table class="tabla-roll">
-            <thead>
-              <tr class="odd">
-                <th>Lucky Number</th>
-                <th>Payout Amount</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="even">
-                <td>100000</td>
-                <td>5000 Coin</td>
-              </tr>
-              <tr class="odd">
-                <td>98000 - 99999</td>
-                <td>500 Coin</td>
-              </tr>
-              <tr class="even">
-                <td>96000 - 97999</td>
-                <td>200 Coin</td>
-              </tr>
-              <tr class="odd">
-                <td>90000 - 95999</td>
-                <td>100 Coin</td>
-              </tr>
-              <tr class="even">
-                <td>70000 - 89999</td>
-                <td>40 Coin</td>
-              </tr>
-              <tr class="odd">
-                <td>1 - 69999</td>
-                <td>20 Coin</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="ads-payu">
-          <a href="https://www.coinpayu.com/?r=Grande2112">
-            <img
-              title="Join coinpayu to earn!"
-              alt="coinpayu"
-              src="https://www.coinpayu.com/static/earners_banner/468X60_es.gif"
-            />
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- seccion prueba conteo regresivo -->
 
     <section>
       <footer class="footer">
