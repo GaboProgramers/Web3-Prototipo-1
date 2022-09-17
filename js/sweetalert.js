@@ -4,6 +4,7 @@ const navToggle = document.querySelector('.navToggle');
 const listaInterna = document.querySelector('.lista-interna');
 const conjuntoDesplegable = document.querySelector('.conjunto-desplegable');
 
+
 navToggle.addEventListener('click', () => {
   listaInterna.classList.toggle('active');
 });
@@ -15,6 +16,20 @@ conjuntoDesplegable.addEventListener('click', e => {
   if(!clickedElm.classList.contains('navToggle') && !clickedElm.classList.contains('.lista-interna')){
       listaInterna.classList.remove('active')
   }
+});
+
+const icon = document.querySelector('.desplegable');
+
+icon.addEventListener('click', function() {
+  const icono = this.querySelector('i');
+
+  if (this.querySelector('i').classList.contains('bx-menu')){
+    icono.classList.remove('bx-menu');
+    icono.classList.add('bx-x');
+  } else {
+    icono.classList.remove('bx-x');
+    icono.classList.add('bx-menu');
+   }
 })
 
 
