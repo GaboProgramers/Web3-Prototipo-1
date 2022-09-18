@@ -18,7 +18,7 @@
 
 .perfil h1 {
     font-size: 35px;
-    line-height: 3;
+    line-height: 2;
     border: 2px solid var(--color-primario-header);
     border-radius: 10px;
     width: 70%;
@@ -27,22 +27,56 @@
     background-color: var(--color-secundario-body);
     letter-spacing: 2px;
     color: var(--color-enlaces-inicial);
+    margin-bottom: 50px;
 }
 
 .perfil .info-basic {
-    border: 1px solid red;
-    margin: 10px 0;
+    border: 1.5px solid var(--instagram);
+    border-radius: 20px;
+    margin: 30px 0;
     width: 100%;
     background-color: var(--color-secundario-body);
 }
 
 .info-basic h2 {
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid var(--color-primario-header);
     padding: 5px;
+    color: var(--color-enlaces-inicial);
+    font-weight: 400;
 }
 
 .info-basic .info {
-    margin: 15px 40px;
+    margin: 30px 40px;
+}
+
+.info-basic .info .text-warning {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--pinterest);
+}
+
+.info-basic .info .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.info-basic .info .button button {
+    padding: 15px 40px;
+    font-size: 20px;
+    border-radius: 15px;
+    font-weight: 600;
+    background-image: linear-gradient(to right, #03e1e4 0%, #105aa4 100%);
+    cursor: pointer;
+}
+
+.info-basic .info .button button:hover {
+    background-image: linear-gradient(to left, #03e1e4 0%, #105aa4 100%);
 }
 
 .info-basic .info .info-user {
@@ -50,29 +84,50 @@
     margin-bottom: 20px;
 }
 
+.info-basic .info .info-user .password2 {
+    margin-left: 60px;
+}
+
 .info-basic .info .info-user p {
     margin-right: 50px;
     font-size: 25px;
-    font-weight: 700;
+    font-weight: 500;
     color: var(--instagram);
 }
 
 .info-basic .info .info-user input {
     width: 50%;
+    outline: none;
+    border: 3px solid var(--instagram);
     border-radius: 5px;
     font-family: inherit;
+    font-size: 20px;
     font-weight: 700;
     margin-left: 20px;
+    padding: 10px 30px 10px 20px;
+    transition: all .5s ease-in-out;
+}
+
+.info-basic .info .info-user input:focus {
+    border: 3px solid var(--facebook);
 }
 
 .info-basic .info .info-user input::placeholder {
-    padding: 10px 0 5px 40px;
-    margin-left: 20px;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
 }
 
-.info-basic .info .info-user input::selection {
-    border: 2px solid var(--instagram);
+@media screen and (max-width: 790px) {
+    .info-basic .info .info-user {
+        flex-direction: column;
+    }
+
+    .info-basic .info .info-user input {
+        width: 100%;
+    }
+
+    .info-basic .info .info-user .password2 {
+        margin-left: 20px;
+    }
 }
