@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+.referals {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    margin: 80px auto;
+}
+
+.referals h1 {
+    font-size: 35px;
+    line-height: 2;
+    border: 2px solid var(--color-primario-header);
+    border-radius: 10px;
+    width: 70%;
+    text-align: center;
+    font-weight: 500;
+    background-color: var(--color-secundario-body);
+    letter-spacing: 2px;
+    color: var(--color-enlaces-inicial);
+    margin-bottom: 50px;
+}
+
+.referals .info-referals {
+    border-radius: 20px;
+    margin: 30px 0;
+    width: 100%;
+    background-color: var(--color-secundario-body);
+}
+
+.info-referals h2 {
+    border-bottom: 1px solid var(--color-primario-header);
+    padding: 5px;
+    color: var(--color-enlaces-inicial);
+    font-weight: 400;
+}
+
+.nota-referals {
+    width: 100%;
+    margin: 20px 0;
+    border: 1px solid var(--color-primario-header);
+    border-radius: 15px;
+    padding: 20px;
+    background-color: var(--pinterest);
+}
+
+.nota-referals li {
+    list-style: circle;
+    margin: 10px 30px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.link-referals {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -50px;
+    /* border: 1px solid red; */
+}
+
+.link-referals .copy-link {
+    width: 70%;
+    padding: 20px 30px;
+    background-color: var(--color-primario-header);
+    border-left: 5px solid var(--instagram);
+}
+
+.copy-link h3 {
+    margin: 0 0 15px 0;
+    color: var(--color-enlaces-inicial);
+    font-weight: 400;
+}
+
+.copy-link .copy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid rebeccapurple;
+    border-radius: 5px;
+}
+
+.copy-link .copy .url {
+    width: 80%;
+    color: var(--instagram);
+    font-size: 18px;
+    border: none;
+    padding: 5px;
+    background-color: var(--color-primario-header);
+}
+
+.copy-link .copy i {
+    margin-right: 10px;
+    color: var(--twitter);
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.link-referals .publicidad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+
+@media screen and (max-width: 790px) {
+
+    .referals {
+        width: 100%;
+    }
+
+
+    .link-referals {
+        flex-direction: column;
+    }
+
+    .link-referals .copy-link {
+        width: 100%;
+    }
+
+    .link-referals .publicidad {
+        margin-top: 50px;
+        width: 100%;
+    }
+}
